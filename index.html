@@ -9,14 +9,39 @@
 	<link rel='stylesheet' href='asset/css/bootstrap.css'>
 	<link rel='stylesheet' href='asset/css/all.css'>
 	<link rel='stylesheet' href='asset/css/style.css'>
+    <style>
+        .navbar-brand-container {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-brand-container h2 {
+            margin-right: 5px; /* Adjust the spacing between the name and icons if needed */
+        }
+        .icon {
+            display: flex;
+        }
+        .icon a {
+            margin-right: 10px; /* Adjust the spacing between icons if needed */
+        }
+		.custom-col {
+        	padding: 1rem; /* Adjust this value as needed */
+    	}
+    </style>
 </head>
 
 <body class='bg-light'>
 	<header>
 		<nav class='navbar navbar-light fixed-top bg-light'>
-			<a class='navbar-brand col-sm-3 col-md-2 mt-1 ml-5' href='index.html'>
-				<h2>Ethan Shen</h2>
-			</a>
+            <div class='navbar-brand-container col-sm-3 col-md-2 mt-1 ml-5'>
+                <a class='navbar-brand' href='index.html'>
+                    <h2>Ethan Shen</h2>
+                </a>
+                <div class="icon">
+                    <a class="text-dark" href="https://www.linkedin.com/in/ethanlshen/"><i class="fab fa-linkedin mx-1"></i></a>
+                    <a class="text-dark" href="https://github.com/ethanlshen"><i class="fab fa-github mx-1"></i></a>
+                    <a class="text-dark" href="https://twitter.com/ethnlshn"><i class="fab fa-twitter mx-1"></i></a>
+                </div>
+            </div>
 			<ul class="nav justify-content-center">
 				<li class="nav-item">
 					<a class=" nav-link" href="asset/pdf/EthanShenCV.pdf">CV</a>
@@ -28,7 +53,7 @@
 					<a class=" nav-link" href="#projects">Projects</a>
 				</li>
 				<li class="nav-item">
-					<a class=" nav-link" href="#other">Other</a>
+					<a class=" nav-link" href="#other">History</a>
 				</li>
 			</ul>
 		</nav>
@@ -40,122 +65,118 @@
 					<img class="img-fluid rounded" src="asset/image/me.JPG" alt="headshot">
 				</div>
 				<div class="col-8">
-					<h4 class=''>Undergraduate Student @ University of Washington </h4>
+					<h4 class=''>Student Researcher @ University of Washington </h4>
 					<div class="row">
 						<p class="text-muted mx-3 my-2">ethans03 [at] cs.washington.edu</p>
-					<span class="icon"><a class="text-dark" href="https://www.linkedin.com/in/ethanlshen/"><i
-						class="fab fa-linkedin mx-2"></i></a></span>
-					<span class="icon"><a class="text-dark" href="https://github.com/ethanlshen"><i
-								class="fab fa-github mx-2"></i></a></span>
-					<span class="icon"><a class="text-dark" href="https://twitter.com/ethnlshn"><i
-						class="fab fa-twitter mx-2"></i></a></span>
 					</div>
 					<p>
-						Hi! I am a undergraduate student at the University of Washington majoring in Computer Science with minors in
-						Applied Mathematics and History. I currently work as a research assistant at <a class="" href="https://raivn.cs.washington.edu/">RAIVN Lab</a>
+						Hi! I am a undergraduate student at the University of Washington majoring in Computer Science, minoring in Math and History. I currently work as a research assistant at <a class="" href="https://raivn.cs.washington.edu/">RAIVN Lab</a>
 						mentored by <a class="" href="https://homes.cs.washington.edu/~kusupati/">Aditya Kusupati</a> under 
-						<a class="" href="https://homes.cs.washington.edu/~ali/">Prof. Ali Farhadi</a>. I am broadly interested in how models understand information through representation, model architecture, and training.
+						<a class="" href="https://homes.cs.washington.edu/~ali/">Prof. Ali Farhadi</a>. I am broadly interested in how models understand information through <b>representation, model architecture, and training</b>. I am also interested in the intersection of artificial intelligence and the social sciences.
 					</p>
 				</div>
 			</div>
 		</div>
 	</section>
 	<section class="mx-5 my-5" id="highlights">
-		<h3 class="mx-5">Recent highlights</h3>
+		<h3 class="mx-5">Recent Highlights</h3>
 		<ul class=" mx-5">
 			<li class="bg-light">
 				<b>[May, 2024] </b> Our paper <i>Superposed Decoding: Multiple Generations from a Single Autoregressive Inference Pass
-				</i> has been released as a preprint!
+				</i> has been released as a preprint.
 			</li>
 			<li class="bg-light">
-				<b>[Sep, 2023] </b> Our paper <i>Are “Hierarchical” Visual Representations Hierarchical?</i> has been accepted to the Workshop on Symmetry and Geometry in Neural Representations at NeurIPS 2023!
+				<b>[Sep, 2023] </b> Our paper <i>Are “Hierarchical” Visual Representations Hierarchical?</i> has been accepted to the Workshop on Symmetry and Geometry in Neural Representations at NeurIPS 2023.
 			</li>
 		</ul>
 		</div>
 	</section>
 	<section class="mx-5 my-5" id="research">
-		<h3 class="mx-5">Selected publications</h3>
+		<h3 class="mx-5">Selected Publications</h3>
 		<ul class="list-group list-group-flush mx-5">
 			<li class="list-group-item bg-light">
-				<div class="row">
-					<div class="col-3"><img class="img-fluid" src="asset/image/super.png" alt="superposed">
+				<div class="row mb-4">
+					<div class="col-md-3">
+						<img class="img-fluid" src="asset/image/super.png" alt="superposed">
 					</div>
-					<div class="col-9">
-						<h4 id='top' class=''>Superposed Decoding: Multiple Generations from a Single Autoregressive Inference Pass</h4>
+					<div class="col-md-9">
+						<h4 id='top'>Superposed Decoding: Multiple Generations from a Single Autoregressive Inference Pass</h4>
 						<p><u>Ethan Shen</u>, Alan Fan, Sarah M Pratt, Jae Sung Park, Matthew Wallingford, Sham M. Kakade, Ari Holtzman, Ranjay Krishna, Ali Farhadi, Aditya Kusupati</p>
 						<p>Preprint</p>
-						<p><a href="https://arxiv.org/abs/2405.18400">[PDF]</a>
+						<p>
+							<a href="https://arxiv.org/abs/2405.18400">[PDF]</a>
 							<a href="https://github.com/RAIVNLab/SuperposedDecoding">[Code]</a>
 						</p>
 					</div>
-				<div class="row">
-					<div class="col-3"><img class="img-fluid" src="asset/image/dendrogram.png" alt="dendrogram">
+				</div>
+				<div class="row mb-4">
+					<div class="col-md-3">
+						<img class="img-fluid" src="asset/image/dendrogram.png" alt="dendrogram">
 					</div>
-					<div class="col-9">
-						<h4 id='top' class=''>Are “Hierarchical” Visual Representations Hierarchical?</h4>
+					<div class="col-md-9">
+						<h4 id='top'>Are "Hierarchical" Visual Representations Hierarchical?</h4>
 						<p><u>Ethan Shen</u>, Ali Farhadi, Aditya Kusupati</p>
 						<p>Symmetry and Geometry in Neural Representations, NeurIPS 2023</p>
-						<p><a href="https://arxiv.org/pdf/2311.05784.pdf">[PDF]</a>
+						<p>
+							<a href="https://arxiv.org/pdf/2311.05784.pdf">[PDF]</a>
 							<a href="https://github.com/ethanlshen/HierNet">[Code]</a>
 						</p>
 					</div>
+				</div>
 			</li>
-		</div>
+		</ul>
 	</section>
+	
 	<section class="mx-5 my-5" id="projects">
 		<h3 class="mx-5">Projects</h3>
 		<div class="row mx-5">
-			<div class="col-4">
-				<div class="card mt-3 h-100">
-					<img src="asset/image/gen1.png" class="card-img-top" alt="...">
-					<div class="card-body pb-0">
-						<h5 class="card-title">Generative Visual Question Answering</h5>
-						<h6 class="card-subtitle mb-2 text-muted"></h6>
-						<p class="card-text">I worked with a two classmates to create an
-							experimental Visual Question Answering dataset with 
-							future shifted images generated using Stable Diffusion 2.0.</p>
-						<a href="https://arxiv.org/pdf/2307.10405.pdf"
-							class="card-link">PDF</a>
+			<div class="col-md-4 mb-4 custom-col">
+				<div class="card mt-3 h-100 w-100">
+					<img src="asset/image/vilm.png" class="card-img-top" alt="...">
+					<div class="card-body pb-0 text-left">
+						<h5 class="card-title">Video-Language Models for Out-of-the-Box Reward</h5>
+						<p class="card-text">I experimented with Video-Language Models as drop-in replacements for reward functions during training on environments such as MountainCar and CartPole.</p>
+						<a href="https://github.com/ethanlshen/vlmrm-video" class="card-link">Code</a>
 					</div>
 				</div>
 			</div>
-
-			<div class="col-4">
-				<div class="card mt-3 h-100">
+	
+			<div class="col-md-4 mb-4 custom-col">
+				<div class="card mt-3 h-100 w-100">
+					<img src="asset/image/gen1.png" class="card-img-top" alt="...">
+					<div class="card-body pb-0 text-left">
+						<h5 class="card-title">Generative Visual Question Answering</h5>
+						<p class="card-text">I worked with two classmates to create an experimental Visual Question Answering dataset with future shifted images generated using Stable Diffusion 2.0.</p>
+						<a href="https://arxiv.org/pdf/2307.10405.pdf" class="card-link">PDF</a>
+					</div>
+				</div>
+			</div>
+	
+			<div class="col-md-4 mb-4 custom-col">
+				<div class="card mt-3 h-100 w-100">
 					<img src="asset/image/mutorials.png" class="card-img-top" alt="...">
-					<div class="card-body pb-0">
+					<div class="card-body pb-0 text-left">
 						<h5 class="card-title">Mutorials</h5>
-						<h6 class="card-subtitle mb-2 text-muted"></h6>
-						<p class="card-text">
-							I helped found and develop <a href="https://mutorials.org">Mutorials</a>, 
-						    an ongoing online science trainer to make SAT and AP test preparation fun and accessible.
-						</p>
+						<p class="card-text">I helped found and develop <a href="https://mutorials.org">Mutorials</a>, an ongoing online science trainer to make SAT and AP test preparation fun and accessible.</p>
 						<a href="https://github.com/The-Mu-Foundation/Mutorials" class="card-link">Code</a>
 						<a href="https://mutorials.org/" class="card-link">Site</a>
-
-
 					</div>
 				</div>
 			</div>
 		</div>
-
 	</section>
+	
 
 	<section class="mx-5 my-5" id="other">
-		<h3 class="mx-5">Other</h3>
-		<p class="mx-5">
-			I like to study history. Here are some essays that I enjoyed writing.
-		</p>
+		<h3 class="mx-5">History</h3>
 		<ul class="list-group list-group-flush mx-5">
 			<li class="list-group-item bg-light">
 				<div class="row">
 					<div class="col-9">
 						<h6 id='top' class=''>Gregory of Tours and Einhard: Clovis and Charlemagne</h6>
 						<p>I compare the credibility and accuracy of Einhard and Gregory of Tours as sources for Clovis
-							and Charlemagne. I argue that Gregory of Tours was more credible than Einhard despite
-							Einhard's proximity to Charlemagne.
-						</p>
-						<p><a href="asset/pdf/Einhard.pdf">[PDF]</a>
+							and Charlemagne.
+						<a href="asset/pdf/Einhard.pdf">[PDF]</a>
 						</p>
 					</div>
 				</div>
@@ -163,9 +184,8 @@
 					<div class="col-9">
 						<h6 id='top' class=''>The Detroit Riots of 1967</h6>
 						<p>I contend that the Detroit Riots of 1967 were primarily caused by the decentralization of
-							Detroit's automobile industry in the decade prior. I also examine other causes.
-						</p>
-						<p><a href="asset/pdf/HI.pdf">[PDF]</a>
+							Detroit's automobile industry in the decade prior.
+							<a href="asset/pdf/HI.pdf">[PDF]</a>
 						</p>
 					</div>
 				</div>
@@ -175,26 +195,6 @@
 	<section class="mx-6 my-5">
 		<a href="https://info.flagcounter.com/ON42"><img src="https://s11.flagcounter.com/count2/ON42/bg_FFFFFF/txt_000000/border_CCCCCC/columns_5/maxflags_15/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
 	</section>
-	<!-- <section class="mx-5 my-5" id="dance">
-		<h3 class="mx-5">Dance videos</h3>
-		<div class="row mx-5">
-			<div class="col-6">
-				<div class="ratio ratio-16x9">
-					<iframe class="home-vid" src="https://www.youtube.com/embed/MvXeK9cwEVs" title="YouTube video"
-						allowfullscreen></iframe>
-				</div>
-			</div>
-			<div class="col-6">
-				<div class="ratio ratio-16x9">
-					<iframe class="home-vid" src="https://www.youtube.com/embed/2AwFT3Q2caM" title="YouTube video"
-						allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-		<p class="mx-5 d-flex justify-content-end"><a class='' href='pages/dance.html' role='button'>Watch
-				more &raquo;</a></p>
-		</div>
-	</section> -->
 	<hr class='featurette-divider'>
 	<footer>
 		<p class='mx-5 d-flex justify-content-end'>Inspiration from Zixian Ma.</p>
