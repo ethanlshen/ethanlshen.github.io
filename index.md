@@ -7,7 +7,7 @@ layout: default
 
 <img class="profile-picture" src="me.jpg">
 
-Hi! I am an undergraduate student at the University of Washington double majoring in Computer Science and Math. I also study history on the side. I currently work as a research assistant at the [RAIVN Lab](https://raivn.cs.washington.edu/) under [Prof. Ali Farhadi](https://homes.cs.washington.edu/~ali/) and [Prof. Ranjay Krishna](https://www.ranjaykrishna.com/index.html). I work closely with [Aditya Kusupati](https://adityakusupati.github.io/) and [Matt Wallingford](https://mattwallingford.github.io/).
+Hi! I am a student at the University of Washington double majoring in Computer Science and Math. I also study history on the side. I currently work as a research assistant at the [RAIVN Lab](https://raivn.cs.washington.edu/) under [Prof. Ali Farhadi](https://homes.cs.washington.edu/~ali/) and [Prof. Ranjay Krishna](https://www.ranjaykrishna.com/index.html). I work closely with [Aditya Kusupati](https://adityakusupati.github.io/) and [Matt Wallingford](https://mattwallingford.github.io/).
 
 My current research interests include:
 - Understanding the internal behavior of vision and language models.
