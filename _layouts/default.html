@@ -63,25 +63,25 @@
                 <div style="display: flex; gap: 0.5em; margin-top: 2px; font-size: 0.9em;">
                     {% if site.email %}
                         <a class="email-link" href="mailto:{{ site.email }}" 
-                           style="color: #FF0F00; text-decoration: none;">
+                           style="color: #FF0F00;">
                            Email
                         </a>
                     {% endif %}
                     {% if site.twitter_username %}
                         <a class="twitter-link" href="https://twitter.com/{{ site.twitter_username }}" target="_blank" 
-                        style="color: #FF0F00; text-decoration: none;">
+                        style="color: #FF0F00;">
                             Twitter
                         </a>
                     {% endif %}
                     {% if site.github_username %}
                         <a class="github-link" href="https://github.com/{{ site.github_username }}" target="_blank" 
-                           style="color: #FF0F00; text-decoration: none;">
+                           style="color: #FF0F00;">
                            GitHub
                         </a>
                     {% endif %}
                     {% if site.scholar %}
                         <a class="scholar-link" href="https://scholar.google.com/citations?user={{ site.scholar }}=en" target="_blank" 
-                           style="color: #FF0F00; text-decoration: none;">
+                           style="color: #FF0F00;">
                            Scholar
                         </a>
                     {% endif %}
@@ -90,9 +90,9 @@
             <ul id="navlist" class="alignable pull-right navbar-ul">
                 {% for x in site.nav %}
                     {% if x.name == "Resume" %}
-                        <li class="alignable pull-left nav-list"><a target="_blank" href="{{ x.link }}">{{ x.name }}</a>
+                        <li class="alignable pull-left nav-list"><a target="_blank" style="color: #FF0F00;" href="{{ x.link }}">{{ x.name }}</a>
                     {% else %}
-                        <li class="alignable pull-left nav-list"><a href="{{ x.link }}">{{ x.name }}</a>
+                        <li class="alignable pull-left nav-list"><a style="color: #FF0F00;" href="{{ x.link }}">{{ x.name }}</a>
                     {% endif %}
                     {% if forloop.last == false %}
                         /

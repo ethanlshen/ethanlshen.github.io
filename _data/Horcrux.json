@@ -1,0 +1,23 @@
+{
+  "name": "Horcrux",
+  "type": "album",
+  "root": 0,
+  "parents": [],
+  "items": {
+    "order": [
+      "photography"
+    ],
+    "dict": {
+      "photography": {
+        "name": "photography",
+        "type": "album",
+        "root": 1,
+        "parents": [
+          "photography"
+        ],
+        "path": "./_data/albums/photography.json",
+        "no_sub_album": true
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{%- for album in albums -%}
+  {%- if album.type == 'photos' -%}
+      {%- assign strong_name = album.name | prepend: '<strong>' | append: '</strong>' }} -%}
+      {{ search.terms }}
+      <div class="photos">
+        {%- for photo in album.list -%}
+          <figure class="photo-figure" itemscope>
+            <a class="photo-a" itemprop="{{ photo.path }}" 
+              href="{{ photo.path }}"
+              msrc="{{ photo.min_path }}"
+              data-size="{{ photo.width }}x{{ photo.height }}">
+              <img class="photo-img" itemprop="thumbnail" src="{{ photo.min_path }}"/>
+            </a>
+          </figure>
+        {%- endfor -%}
+      </div>
+  {%- endif -%}
+{%- endfor -%}
