@@ -1,4 +1,8 @@
 title: Ethan Shen
+twitter_username: ethnlshn
+email: ethans03@cs.washington.edu
+github_username: ethanlshen
+scholar: ES3rEEUAAAAJ&hl
 url: "https://ethanlshen.github.io"
 baseurl: ""
 
@@ -20,5 +24,3 @@ nav:
    link: "/"
  - name: "Resume"
    link: "resume.pdf"
- - name: "Contact"
-   link: "contact"

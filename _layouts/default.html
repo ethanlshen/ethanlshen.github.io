@@ -55,11 +55,38 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="navbar container">
-            {% if site.ins_logo %}
-                <img id="ins-logo" src="{{ site.ins_logo }}" />
-            {% endif %}
-            <a id="author-name" class="alignable pull-left" href="{{ site.url }}{{ site.baseurl }}">{{ site.title }}</a>
+        <div class="navbar container" style="display: flex; justify-content: space-between; padding: 1.25em 0;">
+            <div>
+                <a id="author-name" href="{{ site.url }}{{ site.baseurl }}" style="display: block; font-size: 1.5em; margin: 0;">
+                    {{ site.title }}
+                </a>
+                <div style="display: flex; gap: 0.5em; margin-top: 2px; font-size: 0.9em;">
+                    {% if site.email %}
+                        <a class="email-link" href="mailto:{{ site.email }}" 
+                           style="color: #1DA1F2; text-decoration: none;">
+                           Email
+                        </a>
+                    {% endif %}
+                    {% if site.twitter_username %}
+                        <a class="twitter-link" href="https://twitter.com/{{ site.twitter_username }}" target="_blank" 
+                        style="color: #1DA1F2; text-decoration: none;">
+                            | Twitter
+                        </a>
+                    {% endif %}
+                    {% if site.github_username %}
+                        <a class="github-link" href="https://github.com/{{ site.github_username }}" target="_blank" 
+                           style="color: #1DA1F2; text-decoration: none;">
+                           | GitHub
+                        </a>
+                    {% endif %}
+                    {% if site.scholar %}
+                        <a class="github-link" href="https://scholar.google.com/citations?user={{ site.scholar }}=en" target="_blank" 
+                           style="color: #1DA1F2; text-decoration: none;">
+                           | Scholar
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
             <ul id="navlist" class="alignable pull-right navbar-ul">
                 {% for x in site.nav %}
                     {% if x.name == "Resume" %}
@@ -74,6 +101,8 @@
                 {% endfor %}
             </ul>
         </div>
+        
+        
         <div style="clear:both"></div>
         <hr>
         {% if page.is_contact == true %}
