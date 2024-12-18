@@ -4,42 +4,47 @@ layout: default
 
 ## About Me
 
-<img class="profile-picture" src="sherlock.jpg">
+<img class="profile-picture" src="me.jpg">
 
-Hi! I am a junior year student of B.E. Computer Science at Birla Institute of Technology and Science, Pilani.
+Hi! I am an undergraduate student at the University of Washington double majoring in Computer Science and Math. I also study history on the side. I currently work as a research assistant at the [RAIVN Lab](https://raivn.cs.washington.edu/) under [Prof. Ali Farhadi](https://homes.cs.washington.edu/~ali/) and [Prof. Ranjay Krishna](https://www.ranjaykrishna.com/index.html). I work closely with [Aditya Kusupati](https://adityakusupati.github.io/) and [Matt Wallingford](https://mattwallingford.github.io/).
 
-This is a jekyll based resume template. You can find the full source code on [GitHub](https://github.com/bk2dcradle/researcher)
-
-## Research Interest
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam finibus ipsum ac erat aliquam dapibus. Vestibulum vehicula placerat ex, a consectetur odio pharetra quis. Mauris id urna ante. Fusce pharetra diam ac nisi aliquet, vel egestas ex iaculis. Pellentesque laoreet cursus tellus sed pellentesque. Praesent a rhoncus elit. Nunc ipsum nisl, consequat sit amet pretium quis, gravida id ipsum.
+My current research interests include:
+- Understanding the internal behavior of vision and language models.
+- Efficient model architectures.
+- AI and social/natural sciences.
 
 ## Publications
 
-1. F.Bar, J.Doe: Effects of having a placeholder of a name
-2. S.Holmes, J.Watson: Consequences of living with a sociopath in London
+1. **Perception Tokens Enhance Visual Reasoning in Multimodal Language Models**\
+Mahtab Bigverdi, Zelun Luo, Cheng‑Yu Hsieh, <u>Ethan Shen</u>, Dongping Chen, Linda Shapiro, Ranjay Krishna\
+*Under Review*\
+[pdf](https://arxiv.org/abs/2412.03548v1)
 
-## Typography
+2. **Superposed Decoding: Multiple Generations from a Single Autoregressive Inference Pass**\
+<u>Ethan Shen</u>, Alan Fan, Sarah M Pratt, Jae Sung Park, Matthew Wallingford, Sham M. Kakade, Ari Holtzman, Ranjay Krishna, Ali Farhadi, Aditya Kusupati\
+*NeurIPS 2024*\
+[pdf](https://arxiv.org/abs/2405.18400) [code](https://github.com/RAIVNLab/SuperposedDecoding)
 
-This is a [link](http://google.com). Something *italics* and something **bold**.
+3. **Are "Hierarchical" Visual Representations Hierarchical?**\
+<u>Ethan Shen</u>, Ali Farhadi, Aditya Kusupati\
+*NeurIPS 2023 Workshop on Symmetry and Geometry in Neural Representations*\
+[pdf](https://arxiv.org/pdf/2311.05784.pdf) [code](https://github.com/ethanlshen/HierNet)
 
-Here is a table
+## Projects
+1. **Video-Language Models as Out-of-the-Box Reward Functions**\
+*CSE 542 Reinforcement Learning Final Project*\
+[code](https://github.com/ethanlshen/vlmrm-video)
 
-Year | Award | Category
------|-------|--------
-2014 | Emmy  | Won Outstanding Lead Actor in a miniseries or a movie
-2015 | BAFTA | Nominated for Best Leading Actor for Sherlock
-2014 | Satellite | Won Best Actor miniseries or television film
+2. **Generative Visual Question Answering**\
+*CSE 493 Deep Learning Final Project*\
+[pdf](https://arxiv.org/pdf/2307.10405.pdf)
 
-Here is a horizontal rule
+## Essays
 
----
+1. **Gregory of Tours and Einhard: Clovis and Charlemagne**\
+In this essay, I analyze the credibility of Einhard and Gregory of Tours as sources on Clovis and Charlemagne, two of the most influential figures in the Early Middle Ages.\
+[essay](assets/Einhard.pdf)
 
-Here is a blockquote
-
-> To a great mind, nothing is little
-
-## References
-
-* Foo Bar: Head of Department, Placeholder Names, Lorem
-* John Doe: Associate Professor, Department of Computer Science, Ipsum
+2. **The Detroit Riots of 1967**\
+I contend that the Detroit Riots of 1967 were primarily caused by the decentralization of Detroit's automobile industry in the decade prior.\
+[essay](assets/HI.pdf)
