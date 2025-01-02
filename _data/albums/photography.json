@@ -9,8 +9,8 @@
     "IMG_1440-2995x3700.jpg",
     "IMG_1375-2396x2886.jpg",
     "IMG_1345-2783x3477.jpg",
-    "IMG_110-3024x3841.jpg",
     "IMG_1052.jpg",
+    "IMG_101-3024x3841.jpg",
     "IMG_100-1435x1269.jpg"
   ],
   "dict": {
@@ -77,19 +77,19 @@
       "path": "./photos/photography/IMG_1345-2783x3477.jpg",
       "min_path": "./photos/photography/IMG_1345-2783x3477.min.jpg"
     },
-    "IMG_110-3024x3841.jpg": {
-      "type": "photo",
-      "width": 3024,
-      "height": 3841,
-      "path": "./photos/photography/IMG_110-3024x3841.jpg",
-      "min_path": "./photos/photography/IMG_110-3024x3841.min.jpg"
-    },
     "IMG_1052.jpg": {
       "type": "photo",
       "width": 2844,
       "height": 3298,
       "path": "./photos/photography/IMG_1052.jpg",
       "min_path": "./photos/photography/IMG_1052.min.jpg"
+    },
+    "IMG_101-3024x3841.jpg": {
+      "type": "photo",
+      "width": 3024,
+      "height": 3841,
+      "path": "./photos/photography/IMG_101-3024x3841.jpg",
+      "min_path": "./photos/photography/IMG_101-3024x3841.min.jpg"
     },
     "IMG_100-1435x1269.jpg": {
       "type": "photo",
