@@ -22,13 +22,6 @@
       },
       {
         "type": "photo",
-        "width": 3024,
-        "height": 3841,
-        "path": "./photos/photography/IMG_200-3024x3841.jpg",
-        "min_path": "./photos/photography/IMG_200-3024x3841.min.jpg"
-      },
-      {
-        "type": "photo",
         "width": 2816,
         "height": 3373,
         "path": "./photos/photography/IMG_1950-2816x3373.jpg",
@@ -75,6 +68,13 @@
         "height": 3477,
         "path": "./photos/photography/IMG_1345-2783x3477.jpg",
         "min_path": "./photos/photography/IMG_1345-2783x3477.min.jpg"
+      },
+      {
+        "type": "photo",
+        "width": 3024,
+        "height": 3841,
+        "path": "./photos/photography/IMG_110-3024x3841.jpg",
+        "min_path": "./photos/photography/IMG_110-3024x3841.min.jpg"
       },
       {
         "type": "photo",

@@ -2,7 +2,6 @@
   "order": [
     "IMG_4000-4032x2496.jpg",
     "IMG_2000-3024x3875.jpg",
-    "IMG_200-3024x3841.jpg",
     "IMG_1950-2816x3373.jpg",
     "IMG_1900-3721x2933.jpg",
     "IMG_1459-2660x3373.jpg",
@@ -10,6 +9,7 @@
     "IMG_1440-2995x3700.jpg",
     "IMG_1375-2396x2886.jpg",
     "IMG_1345-2783x3477.jpg",
+    "IMG_110-3024x3841.jpg",
     "IMG_1052.jpg",
     "IMG_100-1435x1269.jpg"
   ],
@@ -27,13 +27,6 @@
       "height": 3875,
       "path": "./photos/photography/IMG_2000-3024x3875.jpg",
       "min_path": "./photos/photography/IMG_2000-3024x3875.min.jpg"
-    },
-    "IMG_200-3024x3841.jpg": {
-      "type": "photo",
-      "width": 3024,
-      "height": 3841,
-      "path": "./photos/photography/IMG_200-3024x3841.jpg",
-      "min_path": "./photos/photography/IMG_200-3024x3841.min.jpg"
     },
     "IMG_1950-2816x3373.jpg": {
       "type": "photo",
@@ -83,6 +76,13 @@
       "height": 3477,
       "path": "./photos/photography/IMG_1345-2783x3477.jpg",
       "min_path": "./photos/photography/IMG_1345-2783x3477.min.jpg"
+    },
+    "IMG_110-3024x3841.jpg": {
+      "type": "photo",
+      "width": 3024,
+      "height": 3841,
+      "path": "./photos/photography/IMG_110-3024x3841.jpg",
+      "min_path": "./photos/photography/IMG_110-3024x3841.min.jpg"
     },
     "IMG_1052.jpg": {
       "type": "photo",
