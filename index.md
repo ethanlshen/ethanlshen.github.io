@@ -14,6 +14,8 @@ My current research interests include:
 - Efficient model architectures.
 - AI and social/natural sciences.
 
+**I will be joining the [AI2](https://allenai.org/) as a research intern starting March 2025, and Tesla FSD as a research intern starting September 2025.**
+
 ## Publications
 
 1. **Perception Tokens Enhance Visual Reasoning in Multimodal Language Models**\
