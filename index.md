@@ -14,7 +14,7 @@ My current research interests include:
 - Efficient model architectures.
 - AI and social/natural sciences.
 
-**Update: I will be joining the Allen Institute of AI as a research intern on the OLMo team beginning March 2025. Following that, I will be a research intern on Tesla FSD starting September 2025.**
+**Update: I am currently interning at the Allen Institute of AI on the OLMo team, focusing on LLM scaling and agents.**
 
 ## Publications
 
