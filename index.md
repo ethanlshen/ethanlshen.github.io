@@ -7,7 +7,7 @@ layout: default
 
 <img class="profile-picture" src="me.jpg">
 
-Hi! I am a student at the University of Washington double majoring in Computer Science and Math. I also study history on the side. I currently work as a research intern at the [Allen Institute of AI](https://allenai.org/) on the OLMo team. I am also a research assistant at the [RAIVN Lab](https://raivn.cs.washington.edu/) under [Prof. Ali Farhadi](https://homes.cs.washington.edu/~ali/) and [Prof. Ranjay Krishna](https://www.ranjaykrishna.com/index.html). 
+Hi! I am an incoming PhD student at the University of Washington advised by [Prof. Ali Farhadi](https://homes.cs.washington.edu/~ali/). I also work on coding agents at the [Allen Institute of AI](https://allenai.org/). I graduated from UW with a degree in CS and minor in Math. In my free time, I like to study history.
 My current research interests include:
 - AI Agents.
 - Efficient and novel model architectures.
