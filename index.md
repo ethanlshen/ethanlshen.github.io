@@ -7,11 +7,11 @@ layout: default
 
 <img class="profile-picture" src="me.jpg">
 
-Hi! I am an incoming PhD student at the University of Washington advised by [Prof. Ali Farhadi](https://homes.cs.washington.edu/~ali/). I also work on coding agents at the [Allen Institute of AI](https://allenai.org/). I graduated from UW with a degree in CS and minor in Math. In my free time, I like to study history.
+Hi! I am a first-year PhD student at the University of Washington advised by [Prof. Ali Farhadi](https://homes.cs.washington.edu/~ali/). I currently work on coding agents at the [Allen Institute of AI](https://allenai.org/). I graduated from UW with a degree in CS and minor in Math. In my free time, I like to study history, practice photography, and swim.
 My current research interests include:
-- AI Agents.
+- Agents for code and science.
 - Efficient and novel model architectures.
-- Interpretable language models.
+- Anything interesting!
 
 ## Publications
 
