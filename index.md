@@ -7,7 +7,7 @@ layout: default
 
 <img class="profile-picture" src="me.jpg">
 
-Hi! I am a first-year PhD student at the University of Washington advised by [Prof. Ali Farhadi](https://homes.cs.washington.edu/~ali/). I currently work on coding agents at the [Allen Institute of AI](https://allenai.org/). I graduated from UW with a degree in CS and minor in Math. In my free time, I like to study history, practice photography, and swim.
+Hi! I am a first-year PhD student at the University of Washington advised by [Prof. Ali Farhadi](https://homes.cs.washington.edu/~ali/). I currently work on coding agents at the [Allen Institute of AI](https://allenai.org/). My work has been featured in media such as [GeekWire](https://www.geekwire.com/2026/ai2-cooks-up-open-source-coding-agents-with-tech-equivalent-of-a-hot-plate-and-a-frying-pan/) and [AI Business](https://aibusiness.com/agentic-ai/ai2-releases-open-coding-agents). In my free time, I like to study history, practice photography, and swim.
 My current research interests include:
 - Agents for code and science.
 - Efficient and novel model architectures.
@@ -15,17 +15,22 @@ My current research interests include:
 
 ## Publications
 
-1. **Perception Tokens Enhance Visual Reasoning in Multimodal Language Models**\
+1. **SERA: Soft-Verified Efficient Repository Agents**\
+<u>Ethan Shen</u>, Daniel Tormoen, Saurabh Shah, Ali Farhadi, Tim Dettmers\
+*Preprint 2026*\
+[pdf](https://arxiv.org/pdf/2601.20789) [code](https://github.com/allenai/SERA)
+
+2. **Perception Tokens Enhance Visual Reasoning in Multimodal Language Models**\
 Mahtab Bigverdi, Zelun Luo, Cheng‑Yu Hsieh, <u>Ethan Shen</u>, Dongping Chen, Linda Shapiro, Ranjay Krishna\
 *CVPR 2025*\
-[pdf](https://arxiv.org/abs/2412.03548v1)
+[pdf](https://arxiv.org/abs/2412.03548v1) [code](https://github.com/mahtabbigverdi/Aurora-perception)
 
-2. **Superposed Decoding: Multiple Generations from a Single Autoregressive Inference Pass**\
+3. **Superposed Decoding: Multiple Generations from a Single Autoregressive Inference Pass**\
 <u>Ethan Shen</u>, Alan Fan, Sarah M Pratt, Jae Sung Park, Matthew Wallingford, Sham M. Kakade, Ari Holtzman, Ranjay Krishna, Ali Farhadi, Aditya Kusupati\
 *NeurIPS 2024*\
 [pdf](https://arxiv.org/abs/2405.18400) [code](https://github.com/RAIVNLab/SuperposedDecoding)
 
-3. **Are "Hierarchical" Visual Representations Hierarchical?**\
+4. **Are "Hierarchical" Visual Representations Hierarchical?**\
 <u>Ethan Shen</u>, Ali Farhadi, Aditya Kusupati\
 *NeurIPS 2023 Workshop on Symmetry and Geometry in Neural Representations*\
 [pdf](https://arxiv.org/pdf/2311.05784.pdf) [code](https://github.com/ethanlshen/HierNet)
