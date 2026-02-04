@@ -18,7 +18,7 @@ My current research interests include:
 1. **SERA: Soft-Verified Efficient Repository Agents**\
 <u>Ethan Shen</u>, Daniel Tormoen, Saurabh Shah, Ali Farhadi, Tim Dettmers\
 *Preprint 2026*\
-[pdf](https://arxiv.org/pdf/2601.20789) [code](https://github.com/allenai/SERA) [media](https://www.geekwire.com/2026/ai2-cooks-up-open-source-coding-agents-with-tech-equivalent-of-a-hot-plate-and-a-frying-pan/)
+[pdf](https://arxiv.org/pdf/2601.20789) [code](https://github.com/allenai/SERA) [news](https://www.geekwire.com/2026/ai2-cooks-up-open-source-coding-agents-with-tech-equivalent-of-a-hot-plate-and-a-frying-pan/)
 
 2. **Perception Tokens Enhance Visual Reasoning in Multimodal Language Models**\
 Mahtab Bigverdi, Zelun Luo, Cheng‑Yu Hsieh, <u>Ethan Shen</u>, Dongping Chen, Linda Shapiro, Ranjay Krishna\
