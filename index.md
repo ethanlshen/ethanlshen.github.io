@@ -7,7 +7,7 @@ layout: default
 
 <img class="profile-picture" src="me.jpg">
 
-Hi! I am a first-year PhD student at the University of Washington advised by [Prof. Ali Farhadi](https://homes.cs.washington.edu/~ali/). I currently work on coding agents at the [Allen Institute of AI](https://allenai.org/). My work has been featured in media such as [GeekWire](https://www.geekwire.com/2026/ai2-cooks-up-open-source-coding-agents-with-tech-equivalent-of-a-hot-plate-and-a-frying-pan/) and [AI Business](https://aibusiness.com/agentic-ai/ai2-releases-open-coding-agents). In my free time, I like to study history, practice photography, and swim.
+Hi! I am a first-year PhD student at the University of Washington advised by [Prof. Ali Farhadi](https://homes.cs.washington.edu/~ali/). I currently work on coding agents at the [Allen Institute of AI](https://allenai.org/). In my free time, I like to study history, practice photography, and swim.
 My current research interests include:
 - Agents for code and science.
 - Efficient and novel model architectures.
