@@ -46,7 +46,7 @@ class Album():
         for i, path in enumerate(dirs):
             if path.is_dir():
                 album_list.append(path)
-            elif str(path.suffix).endswith(('.png', '.jpg', '.jpeg', '.tiff', '.bmp', '.gif')):
+            elif str(path.suffix).lower().endswith(('.png', '.jpg', '.jpeg', '.tiff', '.bmp', '.gif')):
                 photo_list.append(path)
                 
         photo_list = self.sort_dirs(photo_list, 'photo')
