@@ -197,6 +197,13 @@
       },
       {
         "type": "photo",
+        "width": 4514,
+        "height": 3225,
+        "path": "./photos/photography/MLK_2900_NEF.jpg",
+        "min_path": "./photos/photography/MLK_2900_NEF.min.jpg"
+      },
+      {
+        "type": "photo",
         "width": 5355,
         "height": 4016,
         "path": "./photos/photography/MLK_2852_NEF.jpg",
@@ -208,13 +215,6 @@
         "height": 3620,
         "path": "./photos/photography/MLK_2821_NEF.jpg",
         "min_path": "./photos/photography/MLK_2821_NEF.min.jpg"
-      },
-      {
-        "type": "photo",
-        "width": 4514,
-        "height": 3225,
-        "path": "./photos/photography/MLK_1000_NEF.jpg",
-        "min_path": "./photos/photography/MLK_1000_NEF.min.jpg"
       },
       {
         "type": "photo",
