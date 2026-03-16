@@ -8,10 +8,24 @@
     "list": [
       {
         "type": "photo",
+        "width": 6010,
+        "height": 3005,
+        "path": "./photos/photography/MLK_3748_NEF.jpg",
+        "min_path": "./photos/photography/MLK_3748_NEF.min.jpg"
+      },
+      {
+        "type": "photo",
         "width": 4016,
-        "height": 4016,
-        "path": "./photos/photography/MLK_3677_NEF.JPG",
-        "min_path": "./photos/photography/MLK_3677_NEF.min.JPG"
+        "height": 6016,
+        "path": "./photos/photography/MLK_3741_NEF.jpg",
+        "min_path": "./photos/photography/MLK_3741_NEF.min.jpg"
+      },
+      {
+        "type": "photo",
+        "width": 3933,
+        "height": 3933,
+        "path": "./photos/photography/MLK_3740_NEF.jpg",
+        "min_path": "./photos/photography/MLK_3740_NEF.min.jpg"
       },
       {
         "type": "photo",
@@ -64,13 +78,6 @@
       },
       {
         "type": "photo",
-        "width": 4690,
-        "height": 3131,
-        "path": "./photos/photography/MLK_3350_NEF.JPG",
-        "min_path": "./photos/photography/MLK_3350_NEF.min.JPG"
-      },
-      {
-        "type": "photo",
         "width": 2765,
         "height": 2071,
         "path": "./photos/photography/MLK_3343_NEF.JPG",
@@ -92,24 +99,17 @@
       },
       {
         "type": "photo",
-        "width": 3568,
-        "height": 3568,
-        "path": "./photos/photography/MLK_3301_NEF.JPG",
-        "min_path": "./photos/photography/MLK_3301_NEF.min.JPG"
-      },
-      {
-        "type": "photo",
-        "width": 4385,
-        "height": 2982,
-        "path": "./photos/photography/MLK_3291_NEF.JPG",
-        "min_path": "./photos/photography/MLK_3291_NEF.min.JPG"
-      },
-      {
-        "type": "photo",
         "width": 3060,
         "height": 3873,
         "path": "./photos/photography/MLK_3281_NEF.JPG",
         "min_path": "./photos/photography/MLK_3281_NEF.min.JPG"
+      },
+      {
+        "type": "photo",
+        "width": 3528,
+        "height": 3528,
+        "path": "./photos/photography/MLK_3230_NEF.jpg",
+        "min_path": "./photos/photography/MLK_3230_NEF.min.jpg"
       },
       {
         "type": "photo",
