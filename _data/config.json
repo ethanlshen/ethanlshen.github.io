@@ -155,24 +155,10 @@
       },
       {
         "type": "photo",
-        "width": 5423,
-        "height": 3620,
-        "path": "./photos/photography/MLK_2821_NEF.jpg",
-        "min_path": "./photos/photography/MLK_2821_NEF.min.jpg"
-      },
-      {
-        "type": "photo",
         "width": 4032,
         "height": 2496,
         "path": "./photos/photography/IMG_4000-4032x2496.jpg",
         "min_path": "./photos/photography/IMG_4000-4032x2496.min.jpg"
-      },
-      {
-        "type": "photo",
-        "width": 2816,
-        "height": 3265,
-        "path": "./photos/photography/IMG_1900-2816x3265.jpg",
-        "min_path": "./photos/photography/IMG_1900-2816x3265.min.jpg"
       },
       {
         "type": "photo",
@@ -187,13 +173,6 @@
         "height": 3841,
         "path": "./photos/photography/IMG_101-3024x3841.jpg",
         "min_path": "./photos/photography/IMG_101-3024x3841.min.jpg"
-      },
-      {
-        "type": "photo",
-        "width": 1435,
-        "height": 1269,
-        "path": "./photos/photography/IMG_100-1435x1269.jpg",
-        "min_path": "./photos/photography/IMG_100-1435x1269.min.jpg"
       }
     ]
   }
