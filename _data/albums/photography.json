@@ -1,8 +1,9 @@
 {
   "order": [
+    "MLK_3800.jpg",
+    "MLK_3797.jpg",
     "MLK_3748_NEF.jpg",
     "MLK_3741_NEF.jpg",
-    "MLK_3740_NEF.jpg",
     "MLK_3536_NEF.JPG",
     "MLK_3521_NEF.JPG",
     "MLK_3488_NEF.JPG",
@@ -26,6 +27,20 @@
     "IMG_101-3024x3841.jpg"
   ],
   "dict": {
+    "MLK_3800.jpg": {
+      "type": "photo",
+      "width": 2508,
+      "height": 2681,
+      "path": "./photos/photography/MLK_3800.jpg",
+      "min_path": "./photos/photography/MLK_3800.min.jpg"
+    },
+    "MLK_3797.jpg": {
+      "type": "photo",
+      "width": 3570,
+      "height": 3395,
+      "path": "./photos/photography/MLK_3797.jpg",
+      "min_path": "./photos/photography/MLK_3797.min.jpg"
+    },
     "MLK_3748_NEF.jpg": {
       "type": "photo",
       "width": 6010,
@@ -39,13 +54,6 @@
       "height": 6016,
       "path": "./photos/photography/MLK_3741_NEF.jpg",
       "min_path": "./photos/photography/MLK_3741_NEF.min.jpg"
-    },
-    "MLK_3740_NEF.jpg": {
-      "type": "photo",
-      "width": 3933,
-      "height": 3933,
-      "path": "./photos/photography/MLK_3740_NEF.jpg",
-      "min_path": "./photos/photography/MLK_3740_NEF.min.jpg"
     },
     "MLK_3536_NEF.JPG": {
       "type": "photo",

@@ -8,6 +8,20 @@
     "list": [
       {
         "type": "photo",
+        "width": 2508,
+        "height": 2681,
+        "path": "./photos/photography/MLK_3800.jpg",
+        "min_path": "./photos/photography/MLK_3800.min.jpg"
+      },
+      {
+        "type": "photo",
+        "width": 3570,
+        "height": 3395,
+        "path": "./photos/photography/MLK_3797.jpg",
+        "min_path": "./photos/photography/MLK_3797.min.jpg"
+      },
+      {
+        "type": "photo",
         "width": 6010,
         "height": 3005,
         "path": "./photos/photography/MLK_3748_NEF.jpg",
@@ -19,13 +33,6 @@
         "height": 6016,
         "path": "./photos/photography/MLK_3741_NEF.jpg",
         "min_path": "./photos/photography/MLK_3741_NEF.min.jpg"
-      },
-      {
-        "type": "photo",
-        "width": 3933,
-        "height": 3933,
-        "path": "./photos/photography/MLK_3740_NEF.jpg",
-        "min_path": "./photos/photography/MLK_3740_NEF.min.jpg"
       },
       {
         "type": "photo",
