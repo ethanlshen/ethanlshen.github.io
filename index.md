@@ -7,11 +7,13 @@ layout: default
 
 <img class="profile-picture" src="me.jpg">
 
-Hi! I am a first-year PhD student at the University of Washington advised by [Prof. Ali Farhadi](https://homes.cs.washington.edu/~ali/). I work on coding agents at the [Allen Institute of AI](https://allenai.org/). In my free time, I like to study history, do photography, and swim/lift.
+Hi! I am a first-year PhD student at the University of Washington advised by [Prof. Ali Farhadi](https://homes.cs.washington.edu/~ali/). I also closely collaborate with [Prof. Tim Dettmers](https://timdettmers.com/). I currently work on coding agents at the [Allen Institute of AI](https://allenai.org/). My research is supported by the PD Soros and NSF GRFP Fellowships.
 My current research interests include:
-- Agents for code and science.
-- Efficient and novel model architectures.
-- Anything interesting!
+- Agents for code and science
+- Model architectures
+- Data curation
+
+In my free time, I like to study history, take pictures, and swim/lift.
 
 ## Publications
 
@@ -44,7 +46,7 @@ Mahtab Bigverdi, Zelun Luo, Cheng‑Yu Hsieh, <u>Ethan Shen</u>, Dongping Chen, 
 *CSE 493 Deep Learning Final Project*\
 [pdf](https://arxiv.org/pdf/2307.10405.pdf)
 
-## Essays
+## History Essays
 
 1. **Gregory of Tours and Einhard: Clovis and Charlemagne**\
 In this essay, I analyze the credibility of Einhard and Gregory of Tours as sources on Clovis and Charlemagne, two of the most influential figures in the Early Middle Ages.\

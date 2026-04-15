@@ -15,13 +15,6 @@
       },
       {
         "type": "photo",
-        "width": 3570,
-        "height": 3395,
-        "path": "./photos/photography/MLK_3797.jpg",
-        "min_path": "./photos/photography/MLK_3797.min.jpg"
-      },
-      {
-        "type": "photo",
         "width": 6010,
         "height": 3005,
         "path": "./photos/photography/MLK_3748_NEF.jpg",
@@ -61,13 +54,6 @@
         "height": 4193,
         "path": "./photos/photography/MLK_3463_NEF.JPG",
         "min_path": "./photos/photography/MLK_3463_NEF.min.JPG"
-      },
-      {
-        "type": "photo",
-        "width": 3626,
-        "height": 4834,
-        "path": "./photos/photography/MLK_3440_NEF.JPG",
-        "min_path": "./photos/photography/MLK_3440_NEF.min.JPG"
       },
       {
         "type": "photo",
