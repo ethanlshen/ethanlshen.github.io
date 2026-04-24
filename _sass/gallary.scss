@@ -1,105 +1,175 @@
 @import "base";
 
-.gallary {
-  max-width: 955px;
-  margin: 0em auto;
-  font-size: 16px;
+// ---------- Gallery page wrapper ----------
+.gallery-page {
+  max-width: 660px; // 40% narrower than original 1100px — images render smaller
+  margin: 0 auto;
+  padding: 0 10px;
 }
-.head {
-  margin-top: 1em;
-  margin-bottom: 1em;
 
-  &.head-1 {
-    @include headline(1.6em, $heading1)
+// ---------- Breadcrumb ----------
+.gallery-breadcrumb {
+  margin: 1em 0 1.5em;
+  font-size: 0.95em;
+  letter-spacing: 0.5px;
+}
+.breadcrumb-link {
+  color: $subtitle;
+  text-decoration: none;
+  transition: color 0.2s;
+  &:hover {
+    color: #333;
   }
-  &.head-2 {
-    @include headline(1.4em, $heading2)
-  }
-  &.head-3 {
-    @include headline(1.2em, $heading3)
-  }
-  &.head-4 {
-    @include headline(1em, $heading4)
-  }
-  &.head-5 {
-    @include headline(0.8em, $heading5)
-  }
+}
+.breadcrumb-sep {
+  color: $text;
+  margin: 0 2px;
+}
+.breadcrumb-current {
+  color: #333;
+  font-weight: 600;
+}
 
-  strong {
-    font-weight: 400;
-  }
+// ---------- Gallery card grid (same masonry as photo grid) ----------
+.gallery-grid {
+  column-count: 3;
+  column-gap: 6px;
 }
-.photos {
-  margin-top: 1.5em;
-  display: grid;
-  grid-template: 1fr / repeat(var(--column, 3), 1fr);
-  column-gap: var(--column-gap, 20px);
-  row-gap: var(--row-gap, 20px);
-}
-.photo-figure {
-  padding: var(--frame-padding);
-  box-sizing: border-box;
-  background-color: $surface;
+
+.gallery-card {
   position: relative;
+  display: block;
+  text-decoration: none;
+  overflow: hidden;
+  break-inside: avoid;
+  margin-bottom: 6px;
+  background: #eee;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &:hover .gallery-card-img {
+    transform: scale(1.04);
+  }
+
+  &:hover .gallery-card-caption {
+    opacity: 1;
+  }
 }
-.photo-a {
+
+.gallery-card-img-wrap {
+  width: 100%;
+  overflow: hidden;
+  background: #eee;
+}
+
+.gallery-card-img {
   display: block;
   width: 100%;
-  position: relative;
-  padding-bottom: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  height: auto;
+  transition: transform 0.5s ease;
 }
-.photo-img {
+
+.gallery-card-caption {
   position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+// ---------- Photo grid (masonry / jigsaw, true aspect ratios) ----------
+.photo-grid {
+  column-count: 3;
+  column-gap: 6px;
+}
+
+.photo-cell {
+  break-inside: avoid;
+  margin-bottom: 6px;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  overflow: hidden;
+  background: #eee;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  a {
+    display: block;
+  }
+}
+
+.photo-img-wrap {
   width: 100%;
-  height: 100%;
-  top: 50%;
-  object-fit: contain;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
+  position: relative;
+  overflow: hidden;
+  background: #eee;
 }
 
-// redefine the style of photoswipe
-button.pswp__button.pswp__button--share {
-  display: none;
+.photo-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
 }
 
+.photo-cell:hover .photo-img {
+  transform: scale(1.04);
+}
+
+// ---------- Responsive ----------
 @media screen and (max-width: $layout-medium) {
-  .gallary {
-    margin: 5em 40px;
+  .gallery-page {
+    padding: 0 16px;
+  }
+  .gallery-grid {
+    column-count: 2;
+    column-gap: 4px;
+  }
+  .gallery-card {
+    margin-bottom: 4px;
+  }
+  .photo-grid {
+    column-count: 2;
+    column-gap: 4px;
+  }
+  .photo-cell {
+    margin-bottom: 4px;
   }
 }
 
 @media screen and (max-width: $layout-small) {
-  .gallary {
-    margin: 4em 6px;
+  .gallery-grid {
+    column-count: 2;
+    column-gap: 3px;
   }
-  h1 {
-    font-size: 1.5em;
+  .gallery-card {
+    margin-bottom: 3px;
   }
-  h2 {
-    font-size: 1em;
+  .photo-grid {
+    column-count: 2;
+    column-gap: 3px;
   }
-  h1, h2 {
-    margin-left: 12px;
-  }
-  .photos {
-    grid-template: 1fr / repeat(var(--column-small, 2), 1fr);
-    column-gap: 10px;
-    row-gap: 10px;
-  }
-  .pswp__counter {
-    font-size: larger;
-  }
-
-  button.pswp__button.pswp__button--fs, 
-  button.pswp__button.pswp__button--arrow-left, 
-  button.pswp__button.pswp__button--arrow-right {
-    display: none;
+  .photo-cell {
+    margin-bottom: 3px;
   }
 }

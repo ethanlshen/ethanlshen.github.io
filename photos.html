@@ -1,30 +1,202 @@
 ---
 layout: default
+title: Photography
 ---
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <link rel="stylesheet" href="{{ "/assets/style.css" | prepend: site.baseurl }}">
-    <SCRIPT TYPE="text/javascript"> 
-      //Disable right click script 
-      //visit http://www.rainbow.arch.scriptmania.com/scripts/ 
-      var message="Sorry, right-click has been disabled"; 
-      /////////////////////////////////// 
-      function clickIE() {if (document.all) {(message);return false;}} 
-      function clickNS(e) {if 
-        (document.layers||(document.getElementById&&!document.all)) { 
-        if (e.which==2||e.which==3) {(message);return false;}}} 
-      if (document.layers) {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;} 
-      else {document.onmouseup=clickNS;document.oncontextmenu=clickIE;} 
-      document.oncontextmenu=new Function("return false") 
-    </SCRIPT> 
-  </head>
-  <body>
-    <div class="gallary">
-      {%- assign albums = site.data.config -%}
-      {%- include album.html -%}
-    </div>
-    {%- include footer.html -%}
-    {%- include swipe.html -%}
-  </body>
-</html>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+<div class="gallery-page">
+  <!-- Breadcrumb navigation -->
+  <nav class="gallery-breadcrumb" id="breadcrumb">
+    <a href="#" class="breadcrumb-link" data-path="">Photography</a>
+  </nav>
+
+  <!-- Gallery container: JS will render content here -->
+  <div class="gallery-container" id="gallery-container"></div>
+</div>
+
+<!-- Inject gallery data from Jekyll into JS -->
+<script>
+window.GALLERY_DATA = {{ site.data.galleries | jsonify }};
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+<script>
+(function() {
+  var data = window.GALLERY_DATA;
+  var container = document.getElementById('gallery-container');
+  var breadcrumb = document.getElementById('breadcrumb');
+
+  // Resolve a gallery path like "landscapes/wide" to the gallery object
+  function resolveGallery(path) {
+    if (!path) return null;
+    var parts = path.split('/');
+    var current = data;
+    for (var i = 0; i < parts.length; i++) {
+      var found = null;
+      var list = Array.isArray(current) ? current : (current.subgalleries || []);
+      for (var j = 0; j < list.length; j++) {
+        if (list[j].id === parts[i]) {
+          found = list[j];
+          break;
+        }
+      }
+      if (!found) return null;
+      current = found;
+    }
+    return current;
+  }
+
+  // Build breadcrumb trail
+  function renderBreadcrumb(path) {
+    var html = '<a href="#" class="breadcrumb-link" data-path="">Photography</a>';
+    if (path) {
+      var parts = path.split('/');
+      var accumulated = '';
+      for (var i = 0; i < parts.length; i++) {
+        accumulated += (i > 0 ? '/' : '') + parts[i];
+        var gallery = resolveGallery(accumulated);
+        var title = gallery ? gallery.title : parts[i];
+        html += ' <span class="breadcrumb-sep">/</span> ';
+        if (i === parts.length - 1) {
+          html += '<span class="breadcrumb-current">' + title + '</span>';
+        } else {
+          html += '<a href="#gallery/' + accumulated + '" class="breadcrumb-link" data-path="' + accumulated + '">' + title + '</a>';
+        }
+      }
+    }
+    breadcrumb.innerHTML = html;
+  }
+
+  // Render the top-level gallery grid
+  function renderGalleries(galleries, parentPath) {
+    var html = '<div class="gallery-grid">';
+    for (var i = 0; i < galleries.length; i++) {
+      var g = galleries[i];
+      var path = parentPath ? parentPath + '/' + g.id : g.id;
+      var coverSrc = g.cover_min || g.cover;
+      var coverDims = '';
+      if (g.cover_width && g.cover_height) {
+        coverDims = ' width="' + g.cover_width + '" height="' + g.cover_height + '"';
+      }
+      html += '<a href="#gallery/' + path + '" class="gallery-card" data-path="' + path + '">';
+      html += '<div class="gallery-card-img-wrap">';
+      html += '<img src="' + coverSrc + '" alt="' + g.title + '" class="gallery-card-img" loading="lazy"' + coverDims + ' />';
+      html += '</div>';
+      html += '<div class="gallery-card-caption">' + g.title + '</div>';
+      html += '</a>';
+    }
+    html += '</div>';
+    return html;
+  }
+
+  // Render a photo grid with FancyBox links (masonry, true aspect ratios)
+  function renderPhotos(photos, galleryId) {
+    var fancyGroup = 'gallery-' + galleryId;
+    var html = '<div class="photo-grid">';
+    for (var i = 0; i < photos.length; i++) {
+      var p = photos[i];
+      var alt = p.alt || '';
+      var dims = '';
+      if (p.width && p.height) {
+        dims = ' width="' + p.width + '" height="' + p.height + '"';
+      }
+      html += '<div class="photo-cell">';
+      html += '<a href="' + p.path + '" data-fancybox="' + fancyGroup + '" data-caption="' + alt + '">';
+      html += '<div class="photo-img-wrap">';
+      html += '<img src="' + p.min_path + '" alt="' + alt + '" class="photo-img" loading="lazy"' + dims + ' />';
+      html += '</div>';
+      html += '</a>';
+      html += '</div>';
+    }
+    html += '</div>';
+    return html;
+  }
+
+  // Main render based on current hash
+  function render() {
+    var hash = window.location.hash.replace(/^#\/?/, '');
+    var path = '';
+    if (hash.indexOf('gallery/') === 0) {
+      path = hash.substring('gallery/'.length);
+    }
+
+    renderBreadcrumb(path);
+
+    if (!path) {
+      // Top level: show all galleries
+      container.innerHTML = renderGalleries(data, '');
+      observeFadeIn();
+      return;
+    }
+
+    var gallery = resolveGallery(path);
+    if (!gallery) {
+      container.innerHTML = '<p>Gallery not found.</p>';
+      return;
+    }
+
+    var html = '';
+
+    // Show sub-galleries if any
+    if (gallery.subgalleries && gallery.subgalleries.length > 0) {
+      html += renderGalleries(gallery.subgalleries, path);
+    }
+
+    // Show photos if any
+    if (gallery.photos && gallery.photos.length > 0) {
+      html += renderPhotos(gallery.photos, gallery.id);
+    }
+
+    if (!html) {
+      html = '<p>This gallery is empty.</p>';
+    }
+
+    container.innerHTML = html;
+
+    // Re-bind FancyBox
+    if (typeof Fancybox !== 'undefined') {
+      Fancybox.unbind(container);
+      Fancybox.bind(container, '[data-fancybox]', {});
+    }
+
+    observeFadeIn();
+  }
+
+  // Fade-in animation using IntersectionObserver
+  function observeFadeIn() {
+    var items = container.querySelectorAll('.gallery-card, .photo-cell');
+    if (!('IntersectionObserver' in window)) {
+      for (var i = 0; i < items.length; i++) {
+        items[i].classList.add('visible');
+      }
+      return;
+    }
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    for (var i = 0; i < items.length; i++) {
+      observer.observe(items[i]);
+    }
+  }
+
+  // Disable right-click on images
+  container.addEventListener('contextmenu', function(e) {
+    if (e.target.tagName === 'IMG') {
+      e.preventDefault();
+    }
+  });
+
+  // Listen for hash changes
+  window.addEventListener('hashchange', render);
+
+  // Initial render
+  render();
+})();
+</script>

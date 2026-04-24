@@ -16,7 +16,7 @@ body {
 }
 a {
     text-decoration: none;
-    color: $accent;
+    color: $link-color;
 }
 a:hover {
     text-decoration: underline;
@@ -129,3 +129,4 @@ hr {
 
 @import "typography";
 @import "tables";
+@import "gallary";

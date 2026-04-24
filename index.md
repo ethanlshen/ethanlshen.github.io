@@ -14,8 +14,6 @@ My current research interests include:
 - New model architectures
 - Data curation
 
-In my free time, I like to study history, take pictures, and swim/lift.
-
 ## Publications
 
 1. **SERA: Soft-Verified Efficient Repository Agents**\
@@ -38,16 +36,7 @@ Mahtab Bigverdi, Zelun Luo, Cheng‑Yu Hsieh, <u>Ethan Shen</u>, Dongping Chen, 
 *NeurIPS 2023 Workshop on Symmetry and Geometry in Neural Representations*\
 [pdf](https://arxiv.org/pdf/2311.05784.pdf) [code](https://github.com/ethanlshen/HierNet)
 
-## Projects
-1. **Video-Language Models as Out-of-the-Box Reward Functions**\
-*CSE 542 Reinforcement Learning Final Project*\
-[code](https://github.com/ethanlshen/vlmrm-video)
-
-2. **Generative Visual Question Answering**\
-*CSE 493 Deep Learning Final Project*\
-[pdf](https://arxiv.org/pdf/2307.10405.pdf)
-
-## History Essays
+## Writing for Fun
 
 1. **Gregory of Tours and Einhard: Clovis and Charlemagne**\
 In this essay, I analyze the credibility of Einhard and Gregory of Tours as sources on Clovis and Charlemagne, two of the most influential figures in the Early Middle Ages.\
