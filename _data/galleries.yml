@@ -3,8 +3,8 @@
 # of those folders) and re-run: python scripts/build_galleries.py
 - id: frigiliana
   title: Frigiliana
-  cover: ./photos/photography/frigiliana/MLK_3463_NEF.jpg
-  cover_min: ./photos/photography/frigiliana/MLK_3463_NEF.min.jpg
+  cover: ./photos/photography/frigiliana/MLK_3463_NEF.JPG
+  cover_min: ./photos/photography/frigiliana/MLK_3463_NEF.min.JPG
   cover_width: 3252
   cover_height: 4193
   photos:
@@ -72,8 +72,8 @@
     height: 3005
 - id: ronda
   title: Ronda
-  cover: ./photos/photography/ronda/MLK_3343_NEF.jpg
-  cover_min: ./photos/photography/ronda/MLK_3343_NEF.min.jpg
+  cover: ./photos/photography/ronda/MLK_3343_NEF.JPG
+  cover_min: ./photos/photography/ronda/MLK_3343_NEF.min.JPG
   cover_width: 2765
   cover_height: 2071
   photos:
@@ -130,8 +130,8 @@
     height: 3552
 - id: malaga
   title: Malaga
-  cover: ./photos/photography/malaga/MLK_3390_NEF.jpg
-  cover_min: ./photos/photography/malaga/MLK_3390_NEF.min.jpg
+  cover: ./photos/photography/malaga/MLK_3390_NEF.JPG
+  cover_min: ./photos/photography/malaga/MLK_3390_NEF.min.JPG
   cover_width: 3271
   cover_height: 4361
   photos:
