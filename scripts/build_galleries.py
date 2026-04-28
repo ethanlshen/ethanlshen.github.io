@@ -11,7 +11,7 @@ Layout:
 _meta.yml fields (all optional):
     title:  display name          (default: folder name, title-cased)
     cover:  filename of cover     (default: first photo, filename-sorted)
-    order:  sort index            (default: unordered — sorted after ordered)
+    order:  sort index — higher values appear first (default: unordered — sorted after ordered)
 
 For each photo, a sibling `<stem>.min<ext>` thumbnail (longest side
 <= THUMB_MAX px) is generated if it does not already exist.
@@ -143,8 +143,8 @@ def build():
         if g is not None:
             galleries.append(g)
 
-    # Sort: explicit `order` first (ascending), then the rest alphabetically by id
-    galleries.sort(key=lambda g: (0, g["_order"]) if "_order" in g else (1, g["id"]))
+    # Sort: explicit `order` first (descending — higher values first), then the rest alphabetically by id
+    galleries.sort(key=lambda g: (0, -g["_order"]) if "_order" in g else (1, g["id"]))
     for g in galleries:
         g.pop("_order", None)
 
