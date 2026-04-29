@@ -3,11 +3,15 @@
 # of those folders) and re-run: python scripts/build_galleries.py
 - id: umtanum
   title: Umtanum Ridge
-  cover: ./photos/photography/umtanum/MLK_3877.jpg
-  cover_min: ./photos/photography/umtanum/MLK_3877.min.jpg
-  cover_width: 6016
-  cover_height: 4016
+  cover: ./photos/photography/umtanum/MLK_3851.jpg
+  cover_min: ./photos/photography/umtanum/MLK_3851.min.jpg
+  cover_width: 3593
+  cover_height: 5389
   photos:
+  - path: ./photos/photography/umtanum/MLK_3851.jpg
+    min_path: ./photos/photography/umtanum/MLK_3851.min.jpg
+    width: 3593
+    height: 5389
   - path: ./photos/photography/umtanum/MLK_3853.jpg
     min_path: ./photos/photography/umtanum/MLK_3853.min.jpg
     width: 4975
