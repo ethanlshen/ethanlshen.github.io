@@ -1,0 +1,46 @@
+{
+  "order": [
+    "MLK_3214.jpg",
+    "MLK_3205_NEF (1).JPG",
+    "MLK_3110_NEF.JPG",
+    "MLK_3061.jpg",
+    "MLK_3022_NEF.JPG"
+  ],
+  "dict": {
+    "MLK_3214.jpg": {
+      "type": "photo",
+      "width": 5747,
+      "height": 3552,
+      "path": "./photos/photography/seville/MLK_3214.jpg",
+      "min_path": "./photos/photography/seville/MLK_3214.min.jpg"
+    },
+    "MLK_3205_NEF (1).JPG": {
+      "type": "photo",
+      "width": 5252,
+      "height": 3475,
+      "path": "./photos/photography/seville/MLK_3205_NEF (1).JPG",
+      "min_path": "./photos/photography/seville/MLK_3205_NEF (1).min.JPG"
+    },
+    "MLK_3110_NEF.JPG": {
+      "type": "photo",
+      "width": 3998,
+      "height": 2999,
+      "path": "./photos/photography/seville/MLK_3110_NEF.JPG",
+      "min_path": "./photos/photography/seville/MLK_3110_NEF.min.JPG"
+    },
+    "MLK_3061.jpg": {
+      "type": "photo",
+      "width": 5603,
+      "height": 4016,
+      "path": "./photos/photography/seville/MLK_3061.jpg",
+      "min_path": "./photos/photography/seville/MLK_3061.min.jpg"
+    },
+    "MLK_3022_NEF.JPG": {
+      "type": "photo",
+      "width": 4713,
+      "height": 3142,
+      "path": "./photos/photography/seville/MLK_3022_NEF.JPG",
+      "min_path": "./photos/photography/seville/MLK_3022_NEF.min.JPG"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "order": [
+    "MLK_4476.jpg",
+    "MLK_4327.jpg",
+    "MLK_4279.jpg",
+    "MLK_4249.jpg",
+    "MLK_4170.jpg",
+    "MLK_4006.jpg",
+    "MLK_3928.jpg"
+  ],
+  "dict": {
+    "MLK_4476.jpg": {
+      "type": "photo",
+      "width": 5584,
+      "height": 3728,
+      "path": "./photos/photography/asia/MLK_4476.jpg",
+      "min_path": "./photos/photography/asia/MLK_4476.min.jpg"
+    },
+    "MLK_4327.jpg": {
+      "type": "photo",
+      "width": 5787,
+      "height": 4016,
+      "path": "./photos/photography/asia/MLK_4327.jpg",
+      "min_path": "./photos/photography/asia/MLK_4327.min.jpg"
+    },
+    "MLK_4279.jpg": {
+      "type": "photo",
+      "width": 6016,
+      "height": 4016,
+      "path": "./photos/photography/asia/MLK_4279.jpg",
+      "min_path": "./photos/photography/asia/MLK_4279.min.jpg"
+    },
+    "MLK_4249.jpg": {
+      "type": "photo",
+      "width": 6016,
+      "height": 4016,
+      "path": "./photos/photography/asia/MLK_4249.jpg",
+      "min_path": "./photos/photography/asia/MLK_4249.min.jpg"
+    },
+    "MLK_4170.jpg": {
+      "type": "photo",
+      "width": 4971,
+      "height": 3318,
+      "path": "./photos/photography/asia/MLK_4170.jpg",
+      "min_path": "./photos/photography/asia/MLK_4170.min.jpg"
+    },
+    "MLK_4006.jpg": {
+      "type": "photo",
+      "width": 5185,
+      "height": 3461,
+      "path": "./photos/photography/asia/MLK_4006.jpg",
+      "min_path": "./photos/photography/asia/MLK_4006.min.jpg"
+    },
+    "MLK_3928.jpg": {
+      "type": "photo",
+      "width": 5892,
+      "height": 3933,
+      "path": "./photos/photography/asia/MLK_3928.jpg",
+      "min_path": "./photos/photography/asia/MLK_3928.min.jpg"
+    }
+  }
+}

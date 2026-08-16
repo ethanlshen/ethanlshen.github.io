@@ -1,0 +1,38 @@
+{
+  "order": [
+    "MLK_3748_NEF.jpg",
+    "MLK_3745_NEF.jpg",
+    "MLK_3741_NEF.jpg",
+    "MLK_3740_NEF.jpg"
+  ],
+  "dict": {
+    "MLK_3748_NEF.jpg": {
+      "type": "photo",
+      "width": 6010,
+      "height": 3005,
+      "path": "./photos/photography/bay/MLK_3748_NEF.jpg",
+      "min_path": "./photos/photography/bay/MLK_3748_NEF.min.jpg"
+    },
+    "MLK_3745_NEF.jpg": {
+      "type": "photo",
+      "width": 4511,
+      "height": 3011,
+      "path": "./photos/photography/bay/MLK_3745_NEF.jpg",
+      "min_path": "./photos/photography/bay/MLK_3745_NEF.min.jpg"
+    },
+    "MLK_3741_NEF.jpg": {
+      "type": "photo",
+      "width": 4016,
+      "height": 6016,
+      "path": "./photos/photography/bay/MLK_3741_NEF.jpg",
+      "min_path": "./photos/photography/bay/MLK_3741_NEF.min.jpg"
+    },
+    "MLK_3740_NEF.jpg": {
+      "type": "photo",
+      "width": 2006,
+      "height": 2229,
+      "path": "./photos/photography/bay/MLK_3740_NEF.jpg",
+      "min_path": "./photos/photography/bay/MLK_3740_NEF.min.jpg"
+    }
+  }
+}

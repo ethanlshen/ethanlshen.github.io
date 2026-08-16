@@ -1,0 +1,30 @@
+{
+  "order": [
+    "MLK_3488_NEF.JPG",
+    "MLK_3463_NEF.JPG",
+    "MLK_3427_NEF.jpg"
+  ],
+  "dict": {
+    "MLK_3488_NEF.JPG": {
+      "type": "photo",
+      "width": 5471,
+      "height": 3652,
+      "path": "./photos/photography/frigiliana/MLK_3488_NEF.JPG",
+      "min_path": "./photos/photography/frigiliana/MLK_3488_NEF.min.JPG"
+    },
+    "MLK_3463_NEF.JPG": {
+      "type": "photo",
+      "width": 3252,
+      "height": 4193,
+      "path": "./photos/photography/frigiliana/MLK_3463_NEF.JPG",
+      "min_path": "./photos/photography/frigiliana/MLK_3463_NEF.min.JPG"
+    },
+    "MLK_3427_NEF.jpg": {
+      "type": "photo",
+      "width": 5184,
+      "height": 3461,
+      "path": "./photos/photography/frigiliana/MLK_3427_NEF.jpg",
+      "min_path": "./photos/photography/frigiliana/MLK_3427_NEF.min.jpg"
+    }
+  }
+}

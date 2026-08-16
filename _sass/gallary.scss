@@ -30,19 +30,25 @@
   font-weight: 600;
 }
 
-// ---------- Gallery card grid (same masonry as photo grid) ----------
+// ---------- Gallery card grid ----------
+// Justified rows: photos.html packs cards into rows and scales each row's
+// height so the widths fill the container exactly — no stranded space, and
+// every card keeps its cover's true aspect ratio. A `featured: true` card
+// gets a two-card row, which works out to ~1.5x a normal card.
+// Widths/heights are set inline by JS; the CSS here is just the shell.
 .gallery-grid {
-  column-count: 3;
-  column-gap: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 6px;
 }
 
 .gallery-card {
   position: relative;
   display: block;
+  max-width: 100%;
   text-decoration: none;
   overflow: hidden;
-  break-inside: avoid;
-  margin-bottom: 6px;
   background: #eee;
   opacity: 0;
   transform: translateY(12px);
@@ -64,6 +70,7 @@
 
 .gallery-card-img-wrap {
   width: 100%;
+  height: 100%;
   overflow: hidden;
   background: #eee;
 }
@@ -71,7 +78,9 @@
 .gallery-card-img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  // Ratios are preserved by the row math; cover only absorbs sub-pixel rounding.
+  object-fit: cover;
   transition: transform 0.5s ease;
 }
 
@@ -142,11 +151,7 @@
     padding: 0 16px;
   }
   .gallery-grid {
-    column-count: 2;
-    column-gap: 4px;
-  }
-  .gallery-card {
-    margin-bottom: 4px;
+    gap: 4px;
   }
   .photo-grid {
     column-count: 2;
@@ -159,11 +164,7 @@
 
 @media screen and (max-width: $layout-small) {
   .gallery-grid {
-    column-count: 2;
-    column-gap: 3px;
-  }
-  .gallery-card {
-    margin-bottom: 3px;
+    gap: 3px;
   }
   .photo-grid {
     column-count: 2;

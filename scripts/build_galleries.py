@@ -12,6 +12,7 @@ _meta.yml fields (all optional):
     title:  display name          (default: folder name, title-cased)
     cover:  filename of cover     (default: first photo, filename-sorted)
     order:  sort index — higher values appear first (default: unordered — sorted after ordered)
+    featured: true                # card spans 2 columns / 2 rows in the gallery grid
 
 For each photo, a sibling `<stem>.min<ext>` thumbnail (longest side
 <= THUMB_MAX px) is generated if it does not already exist.
@@ -112,6 +113,9 @@ def build_gallery(folder: Path) -> dict | None:
         "cover_height": ch,
         "photos": [],
     }
+
+    if meta.get("featured"):
+        entry["featured"] = True
 
     for p in photos:
         mp = ensure_min(p)

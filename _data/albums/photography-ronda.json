@@ -1,0 +1,54 @@
+{
+  "order": [
+    "MLK_3343_NEF.JPG",
+    "MLK_3336_NEF.JPG",
+    "MLK_3319_NEF.JPG",
+    "MLK_3291_NEF (1).JPG",
+    "MLK_3281_NEF.JPG",
+    "MLK_3230_NEF.jpg"
+  ],
+  "dict": {
+    "MLK_3343_NEF.JPG": {
+      "type": "photo",
+      "width": 2765,
+      "height": 2071,
+      "path": "./photos/photography/ronda/MLK_3343_NEF.JPG",
+      "min_path": "./photos/photography/ronda/MLK_3343_NEF.min.JPG"
+    },
+    "MLK_3336_NEF.JPG": {
+      "type": "photo",
+      "width": 4023,
+      "height": 2866,
+      "path": "./photos/photography/ronda/MLK_3336_NEF.JPG",
+      "min_path": "./photos/photography/ronda/MLK_3336_NEF.min.JPG"
+    },
+    "MLK_3319_NEF.JPG": {
+      "type": "photo",
+      "width": 6016,
+      "height": 4016,
+      "path": "./photos/photography/ronda/MLK_3319_NEF.JPG",
+      "min_path": "./photos/photography/ronda/MLK_3319_NEF.min.JPG"
+    },
+    "MLK_3291_NEF (1).JPG": {
+      "type": "photo",
+      "width": 4385,
+      "height": 2982,
+      "path": "./photos/photography/ronda/MLK_3291_NEF (1).JPG",
+      "min_path": "./photos/photography/ronda/MLK_3291_NEF (1).min.JPG"
+    },
+    "MLK_3281_NEF.JPG": {
+      "type": "photo",
+      "width": 3060,
+      "height": 3873,
+      "path": "./photos/photography/ronda/MLK_3281_NEF.JPG",
+      "min_path": "./photos/photography/ronda/MLK_3281_NEF.min.JPG"
+    },
+    "MLK_3230_NEF.jpg": {
+      "type": "photo",
+      "width": 3528,
+      "height": 3528,
+      "path": "./photos/photography/ronda/MLK_3230_NEF.jpg",
+      "min_path": "./photos/photography/ronda/MLK_3230_NEF.min.jpg"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "order": [
+    "MLK_3645_NEF (1).JPG",
+    "MLK_3642_NEF (1).jpg",
+    "MLK_3595.jpg"
+  ],
+  "dict": {
+    "MLK_3645_NEF (1).JPG": {
+      "type": "photo",
+      "width": 4663,
+      "height": 3109,
+      "path": "./photos/photography/granada/MLK_3645_NEF (1).JPG",
+      "min_path": "./photos/photography/granada/MLK_3645_NEF (1).min.JPG"
+    },
+    "MLK_3642_NEF (1).jpg": {
+      "type": "photo",
+      "width": 5720,
+      "height": 3818,
+      "path": "./photos/photography/granada/MLK_3642_NEF (1).jpg",
+      "min_path": "./photos/photography/granada/MLK_3642_NEF (1).min.jpg"
+    },
+    "MLK_3595.jpg": {
+      "type": "photo",
+      "width": 4913,
+      "height": 3116,
+      "path": "./photos/photography/granada/MLK_3595.jpg",
+      "min_path": "./photos/photography/granada/MLK_3595.min.jpg"
+    }
+  }
+}

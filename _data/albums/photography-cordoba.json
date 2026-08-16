@@ -1,0 +1,38 @@
+{
+  "order": [
+    "MLK_2931_NEF.JPG",
+    "MLK_2928_NEF.JPG",
+    "MLK_2900_NEF.jpg",
+    "IMG_7356_good.JPG"
+  ],
+  "dict": {
+    "MLK_2931_NEF.JPG": {
+      "type": "photo",
+      "width": 3905,
+      "height": 4603,
+      "path": "./photos/photography/cordoba/MLK_2931_NEF.JPG",
+      "min_path": "./photos/photography/cordoba/MLK_2931_NEF.min.JPG"
+    },
+    "MLK_2928_NEF.JPG": {
+      "type": "photo",
+      "width": 3548,
+      "height": 4824,
+      "path": "./photos/photography/cordoba/MLK_2928_NEF.JPG",
+      "min_path": "./photos/photography/cordoba/MLK_2928_NEF.min.JPG"
+    },
+    "MLK_2900_NEF.jpg": {
+      "type": "photo",
+      "width": 4514,
+      "height": 3225,
+      "path": "./photos/photography/cordoba/MLK_2900_NEF.jpg",
+      "min_path": "./photos/photography/cordoba/MLK_2900_NEF.min.jpg"
+    },
+    "IMG_7356_good.JPG": {
+      "type": "photo",
+      "width": 5660,
+      "height": 3794,
+      "path": "./photos/photography/cordoba/IMG_7356_good.JPG",
+      "min_path": "./photos/photography/cordoba/IMG_7356_good.min.JPG"
+    }
+  }
+}

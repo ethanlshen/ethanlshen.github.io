@@ -1,0 +1,30 @@
+{
+  "order": [
+    "MLK_2852_NEF.jpg",
+    "MLK_2821_NEF (1).jpg",
+    "MLK_2735_NEF.jpg"
+  ],
+  "dict": {
+    "MLK_2852_NEF.jpg": {
+      "type": "photo",
+      "width": 5355,
+      "height": 4016,
+      "path": "./photos/photography/cascades/MLK_2852_NEF.jpg",
+      "min_path": "./photos/photography/cascades/MLK_2852_NEF.min.jpg"
+    },
+    "MLK_2821_NEF (1).jpg": {
+      "type": "photo",
+      "width": 5423,
+      "height": 3620,
+      "path": "./photos/photography/cascades/MLK_2821_NEF (1).jpg",
+      "min_path": "./photos/photography/cascades/MLK_2821_NEF (1).min.jpg"
+    },
+    "MLK_2735_NEF.jpg": {
+      "type": "photo",
+      "width": 5000,
+      "height": 4016,
+      "path": "./photos/photography/cascades/MLK_2735_NEF.jpg",
+      "min_path": "./photos/photography/cascades/MLK_2735_NEF.min.jpg"
+    }
+  }
+}

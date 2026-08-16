@@ -1,0 +1,38 @@
+{
+  "order": [
+    "MLK_3381_NEF.jpg",
+    "MLK_3379_NEF.JPG",
+    "MLK_3363.jpg",
+    "MLK_3355_NEF.JPG"
+  ],
+  "dict": {
+    "MLK_3381_NEF.jpg": {
+      "type": "photo",
+      "width": 4804,
+      "height": 3367,
+      "path": "./photos/photography/caminito_del_rey/MLK_3381_NEF.jpg",
+      "min_path": "./photos/photography/caminito_del_rey/MLK_3381_NEF.min.jpg"
+    },
+    "MLK_3379_NEF.JPG": {
+      "type": "photo",
+      "width": 4072,
+      "height": 2715,
+      "path": "./photos/photography/caminito_del_rey/MLK_3379_NEF.JPG",
+      "min_path": "./photos/photography/caminito_del_rey/MLK_3379_NEF.min.JPG"
+    },
+    "MLK_3363.jpg": {
+      "type": "photo",
+      "width": 6016,
+      "height": 4016,
+      "path": "./photos/photography/caminito_del_rey/MLK_3363.jpg",
+      "min_path": "./photos/photography/caminito_del_rey/MLK_3363.min.jpg"
+    },
+    "MLK_3355_NEF.JPG": {
+      "type": "photo",
+      "width": 4016,
+      "height": 4016,
+      "path": "./photos/photography/caminito_del_rey/MLK_3355_NEF.JPG",
+      "min_path": "./photos/photography/caminito_del_rey/MLK_3355_NEF.min.JPG"
+    }
+  }
+}

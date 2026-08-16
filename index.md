@@ -7,11 +7,11 @@ layout: default
 
 <img class="profile-picture" src="me.jpg">
 
-Hi! I am a first-year PhD student at the University of Washington advised by [Prof. Ali Farhadi](https://homes.cs.washington.edu/~ali/). I also closely collaborate with [Prof. Tim Dettmers](https://timdettmers.com/). I currently work on coding agents at the [Allen Institute of AI](https://allenai.org/). My research is supported by the PD Soros and NSF GRFP Fellowships.
+Hi! I am a PhD student at the University of Washington advised by [Prof. Ali Farhadi](https://homes.cs.washington.edu/~ali/). I also closely collaborate with [Prof. Tim Dettmers](https://timdettmers.com/). I work on coding agents at the [Allen Institute of AI](https://allenai.org/). My research is supported by the PD Soros and NSF GRFP Fellowships.
 
-My current research interests include:
+Some of my research interests include:
 - Agents for code and science
-- New model architectures
+- Model architectures
 - Data curation
 
 ## Publications

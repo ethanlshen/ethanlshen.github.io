@@ -1,0 +1,30 @@
+{
+  "order": [
+    "MLK_3415_NEF.JPG",
+    "MLK_3405_NEF (1).JPG",
+    "MLK_3390_NEF.JPG"
+  ],
+  "dict": {
+    "MLK_3415_NEF.JPG": {
+      "type": "photo",
+      "width": 4041,
+      "height": 3031,
+      "path": "./photos/photography/malaga/MLK_3415_NEF.JPG",
+      "min_path": "./photos/photography/malaga/MLK_3415_NEF.min.JPG"
+    },
+    "MLK_3405_NEF (1).JPG": {
+      "type": "photo",
+      "width": 3288,
+      "height": 3288,
+      "path": "./photos/photography/malaga/MLK_3405_NEF (1).JPG",
+      "min_path": "./photos/photography/malaga/MLK_3405_NEF (1).min.JPG"
+    },
+    "MLK_3390_NEF.JPG": {
+      "type": "photo",
+      "width": 3271,
+      "height": 4361,
+      "path": "./photos/photography/malaga/MLK_3390_NEF.JPG",
+      "min_path": "./photos/photography/malaga/MLK_3390_NEF.min.JPG"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "order": [
+    "MLK_3548_NEF.jpg",
+    "MLK_3543.jpg",
+    "MLK_3536_NEF.JPG",
+    "MLK_3528_NEF (1).JPG",
+    "MLK_3521_NEF.JPG"
+  ],
+  "dict": {
+    "MLK_3548_NEF.jpg": {
+      "type": "photo",
+      "width": 5792,
+      "height": 3866,
+      "path": "./photos/photography/nerja/MLK_3548_NEF.jpg",
+      "min_path": "./photos/photography/nerja/MLK_3548_NEF.min.jpg"
+    },
+    "MLK_3543.jpg": {
+      "type": "photo",
+      "width": 4797,
+      "height": 2998,
+      "path": "./photos/photography/nerja/MLK_3543.jpg",
+      "min_path": "./photos/photography/nerja/MLK_3543.min.jpg"
+    },
+    "MLK_3536_NEF.JPG": {
+      "type": "photo",
+      "width": 4948,
+      "height": 3958,
+      "path": "./photos/photography/nerja/MLK_3536_NEF.JPG",
+      "min_path": "./photos/photography/nerja/MLK_3536_NEF.min.JPG"
+    },
+    "MLK_3528_NEF (1).JPG": {
+      "type": "photo",
+      "width": 4302,
+      "height": 2868,
+      "path": "./photos/photography/nerja/MLK_3528_NEF (1).JPG",
+      "min_path": "./photos/photography/nerja/MLK_3528_NEF (1).min.JPG"
+    },
+    "MLK_3521_NEF.JPG": {
+      "type": "photo",
+      "width": 5952,
+      "height": 3973,
+      "path": "./photos/photography/nerja/MLK_3521_NEF.JPG",
+      "min_path": "./photos/photography/nerja/MLK_3521_NEF.min.JPG"
+    }
+  }
+}

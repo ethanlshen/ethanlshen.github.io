@@ -1,0 +1,62 @@
+{
+  "order": [
+    "MLK_3881.jpg",
+    "MLK_3879.jpg",
+    "MLK_3877.jpg",
+    "MLK_3863.jpg",
+    "MLK_3858.jpg",
+    "MLK_3853.jpg",
+    "MLK_3851.jpg"
+  ],
+  "dict": {
+    "MLK_3881.jpg": {
+      "type": "photo",
+      "width": 5845,
+      "height": 4011,
+      "path": "./photos/photography/umtanum/MLK_3881.jpg",
+      "min_path": "./photos/photography/umtanum/MLK_3881.min.jpg"
+    },
+    "MLK_3879.jpg": {
+      "type": "photo",
+      "width": 6016,
+      "height": 4016,
+      "path": "./photos/photography/umtanum/MLK_3879.jpg",
+      "min_path": "./photos/photography/umtanum/MLK_3879.min.jpg"
+    },
+    "MLK_3877.jpg": {
+      "type": "photo",
+      "width": 6016,
+      "height": 4016,
+      "path": "./photos/photography/umtanum/MLK_3877.jpg",
+      "min_path": "./photos/photography/umtanum/MLK_3877.min.jpg"
+    },
+    "MLK_3863.jpg": {
+      "type": "photo",
+      "width": 5619,
+      "height": 3751,
+      "path": "./photos/photography/umtanum/MLK_3863.jpg",
+      "min_path": "./photos/photography/umtanum/MLK_3863.min.jpg"
+    },
+    "MLK_3858.jpg": {
+      "type": "photo",
+      "width": 6016,
+      "height": 4016,
+      "path": "./photos/photography/umtanum/MLK_3858.jpg",
+      "min_path": "./photos/photography/umtanum/MLK_3858.min.jpg"
+    },
+    "MLK_3853.jpg": {
+      "type": "photo",
+      "width": 4975,
+      "height": 3184,
+      "path": "./photos/photography/umtanum/MLK_3853.jpg",
+      "min_path": "./photos/photography/umtanum/MLK_3853.min.jpg"
+    },
+    "MLK_3851.jpg": {
+      "type": "photo",
+      "width": 3593,
+      "height": 5389,
+      "path": "./photos/photography/umtanum/MLK_3851.jpg",
+      "min_path": "./photos/photography/umtanum/MLK_3851.min.jpg"
+    }
+  }
+}

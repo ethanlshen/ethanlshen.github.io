@@ -77,10 +77,13 @@ window.GALLERY_DATA = {{ site.data.galleries | jsonify }};
       var path = parentPath ? parentPath + '/' + g.id : g.id;
       var coverSrc = g.cover_min || g.cover;
       var coverDims = '';
+      var ratioAttrs = '';
       if (g.cover_width && g.cover_height) {
         coverDims = ' width="' + g.cover_width + '" height="' + g.cover_height + '"';
+        ratioAttrs = ' data-w="' + g.cover_width + '" data-h="' + g.cover_height + '"';
       }
-      html += '<a href="#gallery/' + path + '" class="gallery-card" data-path="' + path + '">';
+      var cardClass = 'gallery-card' + (g.featured ? ' gallery-card--featured' : '');
+      html += '<a href="#gallery/' + path + '" class="' + cardClass + '" data-path="' + path + '"' + ratioAttrs + '>';
       html += '<div class="gallery-card-img-wrap">';
       html += '<img src="' + coverSrc + '" alt="' + g.title + '" class="gallery-card-img" loading="lazy"' + coverDims + ' />';
       html += '</div>';
@@ -127,6 +130,7 @@ window.GALLERY_DATA = {{ site.data.galleries | jsonify }};
     if (!path) {
       // Top level: show all galleries
       container.innerHTML = renderGalleries(data, '');
+      layoutGalleryGrid();
       observeFadeIn();
       return;
     }
@@ -161,8 +165,126 @@ window.GALLERY_DATA = {{ site.data.galleries | jsonify }};
       Fancybox.bind(container, '[data-fancybox]', {});
     }
 
+    layoutGalleryGrid();
     observeFadeIn();
   }
+
+  // Justified rows (Flickr / Google Photos style): pack cards into rows at a
+  // target height, then scale each row so its widths fill the container
+  // exactly. Every card keeps its cover's true aspect ratio — tall covers stay
+  // tall — and no row ever leaves a stranded strip.
+  //
+  // A featured card starts its own row, and that row is targeted at
+  // FEATURED_SCALE x the normal row height. Because the card keeps its aspect
+  // ratio, it comes out 1.5x bigger in both dimensions — which works the same
+  // for a portrait cover as for a landscape one. Companions ride along at the
+  // same taller row height.
+  var FEATURED_SCALE = 1.5;
+  var NORMAL_RATIO = 1.5; // 3:2, assumed when a cover's dimensions are missing
+
+  function cardRatio(card) {
+    var w = parseFloat(card.getAttribute('data-w'));
+    var h = parseFloat(card.getAttribute('data-h'));
+    if (!w || !h) return NORMAL_RATIO; // unknown dimensions: assume 3:2
+    return w / h;
+  }
+
+  // Row height a normal card is sized to: ~4 across on desktop, ~2.6 on phones.
+  function targetHeight(gridWidth) {
+    return gridWidth < 500 ? gridWidth / 2.6 : gridWidth / 4;
+  }
+
+  function packRows(cards, gridWidth) {
+    var rows = [];
+    var row = [];
+    var ratioSum = 0;
+    var target = gridWidth / targetHeight(gridWidth);
+
+    function flush() {
+      if (row.length) rows.push({ cards: row, ratioSum: ratioSum });
+      row = [];
+      ratioSum = 0;
+    }
+
+    // A row is complete once adding the next card would overshoot the target
+    // ratio sum by more than stopping short of it does.
+    function closerWithout(next, rowTarget) {
+      return Math.abs(ratioSum + next - rowTarget) > Math.abs(ratioSum - rowTarget);
+    }
+
+    for (var i = 0; i < cards.length; i++) {
+      var card = cards[i];
+
+      if (card.classList.contains('gallery-card--featured')) {
+        flush(); // featured always starts a fresh row
+        // Ratio sum that lands the row at FEATURED_SCALE x the normal height.
+        var featuredTarget = gridWidth /
+          (FEATURED_SCALE * targetHeight(gridWidth));
+        row.push(card);
+        ratioSum += cardRatio(card);
+        // Always take at least one companion, then keep going while it helps.
+        // A companion may itself be featured — that's fine, it shares this
+        // row's enlarged height, which is all being featured means here.
+        while (i + 1 < cards.length) {
+          var next = cardRatio(cards[i + 1]);
+          if (row.length > 1 && closerWithout(next, featuredTarget)) break;
+          i++;
+          row.push(cards[i]);
+          ratioSum += next;
+        }
+        flush();
+        continue;
+      }
+
+      if (row.length && closerWithout(cardRatio(card), target)) flush();
+      row.push(card);
+      ratioSum += cardRatio(card);
+    }
+    flush();
+    return rows;
+  }
+
+  function layoutGalleryGrid() {
+    var grid = container.querySelector('.gallery-grid');
+    if (!grid) return;
+    var gap = parseFloat(window.getComputedStyle(grid).columnGap) || 0;
+    // Floor the measured width: rounding up would overflow the row and make
+    // flex wrap the last card onto its own line.
+    var gridWidth = Math.floor(grid.getBoundingClientRect().width);
+    if (!gridWidth) return;
+
+    var cards = Array.prototype.slice.call(grid.querySelectorAll('.gallery-card'));
+    var rows = packRows(cards, gridWidth);
+
+    for (var r = 0; r < rows.length; r++) {
+      var rowCards = rows[r].cards;
+      var available = gridWidth - gap * (rowCards.length - 1);
+      var height = available / rows[r].ratioSum;
+
+      // Don't blow up a short trailing row to fill the width — leave it ragged.
+      var isShortLastRow = r === rows.length - 1 &&
+        height > targetHeight(gridWidth) * 1.2;
+      if (isShortLastRow) height = targetHeight(gridWidth);
+
+      var used = 0;
+      for (var c = 0; c < rowCards.length; c++) {
+        var width = Math.floor(cardRatio(rowCards[c]) * height);
+        // Last card absorbs rounding so the row width matches the grid exactly.
+        if (c === rowCards.length - 1 && !isShortLastRow) {
+          width = available - used;
+        }
+        used += width;
+        rowCards[c].style.width = width + 'px';
+        rowCards[c].style.height = Math.floor(height) + 'px';
+      }
+    }
+  }
+
+  var resizeTimer;
+  window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(layoutGalleryGrid, 120);
+  });
 
   // Fade-in animation using IntersectionObserver
   function observeFadeIn() {

@@ -1,0 +1,38 @@
+{
+  "order": [
+    "MLK_3800.jpg",
+    "IMG_4000-4032x2496.jpg",
+    "IMG_1451-2310x3080.jpg",
+    "IMG_101-3024x3841.jpg"
+  ],
+  "dict": {
+    "MLK_3800.jpg": {
+      "type": "photo",
+      "width": 2508,
+      "height": 2681,
+      "path": "./photos/photography/misc/MLK_3800.jpg",
+      "min_path": "./photos/photography/misc/MLK_3800.min.jpg"
+    },
+    "IMG_4000-4032x2496.jpg": {
+      "type": "photo",
+      "width": 4032,
+      "height": 2496,
+      "path": "./photos/photography/misc/IMG_4000-4032x2496.jpg",
+      "min_path": "./photos/photography/misc/IMG_4000-4032x2496.min.jpg"
+    },
+    "IMG_1451-2310x3080.jpg": {
+      "type": "photo",
+      "width": 2310,
+      "height": 3080,
+      "path": "./photos/photography/misc/IMG_1451-2310x3080.jpg",
+      "min_path": "./photos/photography/misc/IMG_1451-2310x3080.min.jpg"
+    },
+    "IMG_101-3024x3841.jpg": {
+      "type": "photo",
+      "width": 3024,
+      "height": 3841,
+      "path": "./photos/photography/misc/IMG_101-3024x3841.jpg",
+      "min_path": "./photos/photography/misc/IMG_101-3024x3841.min.jpg"
+    }
+  }
+}

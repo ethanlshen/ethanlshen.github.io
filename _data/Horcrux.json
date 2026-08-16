@@ -15,8 +15,168 @@
         "parents": [
           "photography"
         ],
-        "path": "./_data/albums/photography.json",
-        "no_sub_album": true
+        "items": {
+          "order": [
+            "asia",
+            "umtanum",
+            "frigiliana",
+            "cascades",
+            "bay",
+            "misc",
+            "granada",
+            "seville",
+            "ronda",
+            "nerja",
+            "malaga",
+            "caminito_del_rey",
+            "cordoba"
+          ],
+          "dict": {
+            "asia": {
+              "name": "asia",
+              "type": "album",
+              "root": 2,
+              "parents": [
+                "photography",
+                "asia"
+              ],
+              "path": "./_data/albums/photography-asia.json",
+              "no_sub_album": true
+            },
+            "umtanum": {
+              "name": "umtanum",
+              "type": "album",
+              "root": 2,
+              "parents": [
+                "photography",
+                "umtanum"
+              ],
+              "path": "./_data/albums/photography-umtanum.json",
+              "no_sub_album": true
+            },
+            "frigiliana": {
+              "name": "frigiliana",
+              "type": "album",
+              "root": 2,
+              "parents": [
+                "photography",
+                "frigiliana"
+              ],
+              "path": "./_data/albums/photography-frigiliana.json",
+              "no_sub_album": true
+            },
+            "cascades": {
+              "name": "cascades",
+              "type": "album",
+              "root": 2,
+              "parents": [
+                "photography",
+                "cascades"
+              ],
+              "path": "./_data/albums/photography-cascades.json",
+              "no_sub_album": true
+            },
+            "bay": {
+              "name": "bay",
+              "type": "album",
+              "root": 2,
+              "parents": [
+                "photography",
+                "bay"
+              ],
+              "path": "./_data/albums/photography-bay.json",
+              "no_sub_album": true
+            },
+            "misc": {
+              "name": "misc",
+              "type": "album",
+              "root": 2,
+              "parents": [
+                "photography",
+                "misc"
+              ],
+              "path": "./_data/albums/photography-misc.json",
+              "no_sub_album": true
+            },
+            "granada": {
+              "name": "granada",
+              "type": "album",
+              "root": 2,
+              "parents": [
+                "photography",
+                "granada"
+              ],
+              "path": "./_data/albums/photography-granada.json",
+              "no_sub_album": true
+            },
+            "seville": {
+              "name": "seville",
+              "type": "album",
+              "root": 2,
+              "parents": [
+                "photography",
+                "seville"
+              ],
+              "path": "./_data/albums/photography-seville.json",
+              "no_sub_album": true
+            },
+            "ronda": {
+              "name": "ronda",
+              "type": "album",
+              "root": 2,
+              "parents": [
+                "photography",
+                "ronda"
+              ],
+              "path": "./_data/albums/photography-ronda.json",
+              "no_sub_album": true
+            },
+            "nerja": {
+              "name": "nerja",
+              "type": "album",
+              "root": 2,
+              "parents": [
+                "photography",
+                "nerja"
+              ],
+              "path": "./_data/albums/photography-nerja.json",
+              "no_sub_album": true
+            },
+            "malaga": {
+              "name": "malaga",
+              "type": "album",
+              "root": 2,
+              "parents": [
+                "photography",
+                "malaga"
+              ],
+              "path": "./_data/albums/photography-malaga.json",
+              "no_sub_album": true
+            },
+            "caminito_del_rey": {
+              "name": "caminito_del_rey",
+              "type": "album",
+              "root": 2,
+              "parents": [
+                "photography",
+                "caminito_del_rey"
+              ],
+              "path": "./_data/albums/photography-caminito_del_rey.json",
+              "no_sub_album": true
+            },
+            "cordoba": {
+              "name": "cordoba",
+              "type": "album",
+              "root": 2,
+              "parents": [
+                "photography",
+                "cordoba"
+              ],
+              "path": "./_data/albums/photography-cordoba.json",
+              "no_sub_album": true
+            }
+          }
+        }
       }
     }
   }
