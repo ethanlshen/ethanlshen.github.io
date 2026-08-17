@@ -53,6 +53,38 @@
             }
         }
     }
+    .profile-swap {
+        display: block;
+        overflow: hidden;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+            transition: opacity 0.25s ease;
+        }
+        .profile-swap-alt {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+        // hover swap (pointer devices only)
+        @media (hover: hover) {
+            &:hover, &:focus-visible {
+                .profile-swap-alt { opacity: 1; }
+                .profile-swap-base { opacity: 0; }
+            }
+        }
+        // click/tap pin, which wins over hover until clicked again
+        &.is-swapped {
+            .profile-swap-alt { opacity: 1 !important; }
+            .profile-swap-base { opacity: 0 !important; }
+        }
+    }
     img {
         text-align: center;
         width: 100%;

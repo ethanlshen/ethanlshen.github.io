@@ -5,7 +5,10 @@ layout: default
 ## About Me
 
 
-<img class="profile-picture" src="me.jpg">
+<span class="profile-picture profile-swap" role="button" tabindex="0" aria-label="Toggle profile picture">
+<img class="profile-swap-base" src="me.jpg" alt="Ethan Shen">
+<img class="profile-swap-alt" src="me2.jpg" alt="Ethan Shen" aria-hidden="true">
+</span>
 
 Hi! I am a PhD student at the University of Washington advised by [Prof. Ali Farhadi](https://homes.cs.washington.edu/~ali/). I also closely collaborate with [Prof. Tim Dettmers](https://timdettmers.com/). I work on coding agents at the [Allen Institute of AI](https://allenai.org/). My research is supported by the PD Soros and NSF GRFP Fellowships.
 
