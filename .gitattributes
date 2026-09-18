@@ -1,0 +1,10 @@
+# Never let git touch binary payloads (no eol/text conversion)
+*.pdf binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.webp binary
+*.heic binary
+*.mp4 binary
+*.mov binary
