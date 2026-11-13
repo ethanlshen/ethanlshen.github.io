@@ -8,9 +8,11 @@ title: Ethan Shen
 
 <img class="profile-picture" src="me2.jpg" alt="Ethan Shen">
 
-Hi! I am a PhD student at the University of Washington advised by [Prof. Ali Farhadi](https://homes.cs.washington.edu/~ali/). I also closely collaborate with [Prof. Tim Dettmers](https://timdettmers.com/). I work on coding agents at the [Allen Institute of AI](https://allenai.org/). My research is supported by the PD Soros and NSF GRFP Fellowships.
+Hi! I am a PhD student at the University of Washington advised by [Prof. Ali Farhadi](https://homes.cs.washington.edu/~ali/). I also collaborate with [Prof. Tim Dettmers](https://timdettmers.com/). I am currently a Student Researcher at Google Deepmind, where I work on AI safety. My research is supported by the PD Soros and NSF GRFP Fellowships.
 
-Some of my interests include:
+Previously, I worked on coding agents at Ai2. I have also had the privilege of working with [Prof. Ranjay Krishna](https://ranjaykrishna.com/index.html), [Aditya Kusupati](https://adityakusupati.com/), and [Matt Wallingford](https://mattwallingford.github.io/).
+
+Some of my current interests include:
 - Agents for code and science
 - Model architectures
 - AI policy
